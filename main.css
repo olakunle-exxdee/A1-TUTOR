@@ -147,7 +147,6 @@ body {
   right: 0;
   bottom: 0;
   z-index: 1;
-  display: none;
 }
 .navbar-one {
   text-align: center;
@@ -521,6 +520,9 @@ body {
     );
     clip-path: ellipse(100% 70% at 55% 32%);
     clip-path: ellipse(100% 65.7% at 53.21% 32.13%);
+  }
+  .logo {
+    background: transparent;
   }
   .menu {
     display: none;
