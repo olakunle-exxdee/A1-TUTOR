@@ -110,15 +110,18 @@ body::-webkit-scrollbar-thumb {
 /*************************************** fonts************************************** */
 
 body {
-  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
   line-height: 1.5;
   font-family: "CamptonBook", sans-serif;
   background-color: #f4f7fb;
-
+}
+.container {
   max-width: 144em;
+  margin: 0 auto;
 }
 /************************* NAVBARs************************************ */
 .header {
+  position: relative;
   min-height: 95vh;
   background-image: linear-gradient(
     to right bottom,
@@ -146,7 +149,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  display: none;
 }
 .navbar-one {
   text-align: center;
@@ -472,6 +475,67 @@ body {
 }
 
 /************************* WHYYY************************************ */
+/********************************* FEATURES************************************ */
+.features {
+  max-width: var(--max-width-section);
+  padding: 0 2em;
+  margin: 0 auto;
+}
+.features-heading {
+  text-align: center;
+  margin: 8rem 0 4rem 0;
+}
+.features-heading h3 {
+  letter-spacing: 0.5rem;
+  color: var(--grey);
+}
+.features-heading .why-header {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.features-wrapper {
+}
+.notes-group {
+  display: flex;
+  column-gap: 2rem;
+  width: 100%;
+}
+.notes-group > * {
+  flex-basis: 100%;
+}
+
+.note {
+  background: var(--white);
+  padding: 3em 2em;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+.note-group {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.note-group img {
+  width: 30px;
+  height: 30px;
+}
+.note-group p {
+  font-family: "CamptonSemiBold";
+  color: #336799;
+  font-size: 1.6rem;
+  margin-left: 0.5em;
+}
+.note-text {
+}
+.note-text p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: var(--grey-dark);
+}
+
+/********************************* FEATURES************************************ */
 
 /* media queries  */
 @media only screen and (min-width: 40em) {
@@ -580,7 +644,7 @@ body {
   /************************* heroes************************************ */
 
   .box {
-    max-width: 180px;
+    max-width: 185px;
   }
 
   .box-group p {
