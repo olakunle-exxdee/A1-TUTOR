@@ -114,9 +114,10 @@ body {
   line-height: 1.5;
   font-family: "CamptonBook", sans-serif;
   background-color: #f4f7fb;
+  position: relative;
 }
 .container {
-  max-width: 144em;
+  max-width: 18.75em;
   margin: 0 auto;
 }
 /************************* NAVBARs************************************ */
@@ -138,6 +139,8 @@ body {
     #171826
   );
   color: var(--light-white);
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
 }
 
 .navbar {
@@ -148,7 +151,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 9999999999999;
+  z-index: 9;
   display: none;
 }
 .navbar-one {
@@ -319,8 +322,8 @@ body {
 }
 .circle1 {
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   background: rgba(255, 255, 255, 0.03);
   border-radius: 50%;
   top: 50%;
@@ -329,8 +332,8 @@ body {
 }
 .circle2 {
   position: absolute;
-  width: 220px;
-  height: 220px;
+  width: 180px;
+  height: 180px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
   top: 50%;
@@ -549,9 +552,124 @@ body {
   display: none;
 }
 /********************************* FEATURES************************************ */
+/************************* Get Started************************************ */
+.started {
+  margin: 4rem 0;
+  padding: 4rem 0;
+  color: var(--white);
+  background-image: linear-gradient(to bottom, #5ac8fa, 89%, #4081bf);
+  text-align: center;
+}
+.started-wrapper {
+  max-width: var(--max-width-section);
+  margin: 0 auto;
+}
+.started-heading p {
+  font-size: 1.4rem;
+  max-width: 300px;
+  margin: 0 auto;
+  color: rgba(244, 247, 251, 0.8);
+}
+.started-btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.started-btn-group .web {
+  margin: 1rem auto;
+  color: var(--white);
+  font-size: 1.2em;
+  background: rgba(244, 247, 251, 0.2);
+}
+
+/************************* Get Started************************************ */
+
+/*******************************TESTIMONIALS************************************ */
+.testimonial {
+  max-width: var(--max-width-section);
+  margin: 4rem auto;
+  padding: 0 2em;
+}
+/* .testimonial-wrapper {
+  position: relative;
+} */
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+.person-content + .person-img {
+  margin-left: 4rem;
+}
+.testimonial-text {
+  max-width: 600px;
+  line-height: 2;
+  color: var(--grey);
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+.person-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.content-group p {
+  color: var(--grey);
+  font-size: 1.2rem;
+}
+.content-group h3 {
+  color: var(--dark-blue);
+  font-family: "CamptonBold";
+  font-size: 1.6rem;
+}
+.left-btn,
+.right-btn {
+  cursor: pointer;
+  background: #dde1e6;
+  display: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+}
+.right-btn {
+  right: -10px;
+  top: 50%;
+}
+.left-btn {
+  left: -10px;
+  top: 50%;
+}
+.dot-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80px;
+  margin: 4rem auto;
+}
+.dot {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  background: var(--grey);
+  border-radius: 50%;
+}
+
+/*******************************TESTIMONIALS************************************ */
 
 /* media queries  */
 @media only screen and (min-width: 40em) {
+  .container {
+    max-width: 90em;
+    margin: 0 auto;
+  }
   .btn-group {
     flex-direction: row;
   }
@@ -580,7 +698,51 @@ body {
   .why-text {
     font-size: 1.4rem;
   }
+  .started {
+    padding: 8rem 0;
+  }
+  .started-btn-group {
+    flex-direction: row;
+    max-width: 700px;
+    margin: 0 auto;
+    margin: 4rem auto;
+  }
+  .started-btn-group .web {
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+  .started-heading p {
+    font-size: 2rem;
+    max-width: 600px;
+  }
+  .testimonial-text {
+    max-width: 600px;
+    font-size: 1.4rem;
+  }
+
+  .content-group p {
+    font-size: 1.4rem;
+  }
+  .content-group h3 {
+    font-size: 2rem;
+  }
+  .person {
+    max-width: 1000px;
+    padding: 0 4rem;
+  }
+  .left-btn,
+  .right-btn {
+    background: #dde1e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+  }
 }
+
 @media only screen and (min-width: 48em) {
   /************************* NAVBARs************************************ */
   /* .header {
@@ -672,6 +834,24 @@ body {
     max-width: 300px;
     margin: 2em auto;
   } */
+  .started-btn-group {
+    max-width: 800px;
+  }
+  .started-btn-group .web {
+    font-size: 1.4em;
+  }
+  .testimonial-text {
+    max-width: 800px;
+    font-size: 1.4rem;
+  }
+  .right-btn {
+    right: -15px;
+    top: 50%;
+  }
+  .left-btn {
+    left: -15px;
+    top: 50%;
+  }
 }
 @media only screen and (min-width: 64em) {
   /************************* heroes************************************ */
