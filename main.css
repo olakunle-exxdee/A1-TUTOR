@@ -121,7 +121,6 @@ body {
 }
 /************************* NAVBARs************************************ */
 .header {
-  position: relative;
   min-height: 95vh;
   background-image: linear-gradient(
     to right bottom,
@@ -150,7 +149,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  display: none;
+  z-index: 10;
 }
 .navbar-one {
   text-align: center;
