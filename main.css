@@ -661,6 +661,10 @@ body {
   background: var(--grey);
   border-radius: 50%;
 }
+.dot:hover,
+.dot:focus {
+  background: var(--light-blue);
+}
 
 /*******************************TESTIMONIALS************************************ */
 
@@ -839,6 +843,9 @@ body {
   }
   .started-btn-group .web {
     font-size: 1.4em;
+  }
+  .testimonial {
+    margin: 12rem auto;
   }
   .testimonial-text {
     max-width: 800px;
