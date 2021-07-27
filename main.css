@@ -140,6 +140,7 @@ body {
   );
   color: var(--light-white);
 }
+
 .navbar {
   overflow: hidden;
   max-width: var(--max-width-section);
@@ -440,7 +441,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  column-gap: 1rem;
+  gap: 1rem;
   margin: 3rem 0;
 }
 .box {
@@ -494,11 +495,14 @@ body {
   margin: 0 auto;
 }
 .features-wrapper {
+  /* display: flex;
+  align-items: center; */
 }
 .notes-group {
   display: flex;
   column-gap: 2rem;
-  width: 100%;
+  gap: 2em;
+  flex-direction: column;
 }
 .notes-group > * {
   flex-basis: 100%;
@@ -509,6 +513,9 @@ body {
   padding: 3em 2em;
   margin: 2rem 0;
   border-radius: 10px;
+  max-width: 500px;
+
+  margin: 1em auto;
 }
 .note-group {
   display: flex;
@@ -523,7 +530,7 @@ body {
 .note-group p {
   font-family: "CamptonSemiBold";
   color: #336799;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-left: 0.5em;
 }
 .note-text {
@@ -535,6 +542,12 @@ body {
   color: var(--grey-dark);
 }
 
+.notes-images {
+  display: none;
+}
+.note-svg {
+  display: none;
+}
 /********************************* FEATURES************************************ */
 
 /* media queries  */
@@ -570,7 +583,7 @@ body {
 }
 @media only screen and (min-width: 48em) {
   /************************* NAVBARs************************************ */
-  .header {
+  /* .header {
     clip-path: polygon(
       50% 0%,
       83% 0,
@@ -582,9 +595,7 @@ body {
       0 0,
       17% 0
     );
-    clip-path: ellipse(100% 70% at 55% 32%);
-    clip-path: ellipse(100% 65.7% at 53.21% 32.13%);
-  }
+  } */
   .logo {
     background: transparent;
   }
@@ -644,7 +655,7 @@ body {
   /************************* heroes************************************ */
 
   .box {
-    max-width: 185px;
+    max-width: 175px;
   }
 
   .box-group p {
@@ -655,6 +666,12 @@ body {
   .box-group h3 {
     font-size: 2.4rem;
   }
+
+  /* .notes-images {
+    display: block;
+    max-width: 300px;
+    margin: 2em auto;
+  } */
 }
 @media only screen and (min-width: 64em) {
   /************************* heroes************************************ */
@@ -723,4 +740,57 @@ body {
     max-width: 1000px;
   }
   /************************* WHYYY************************************ */
+
+  .features {
+    margin: 8em auto;
+  }
+  .features-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+  }
+  .notes-images {
+    display: block;
+    max-width: 274px;
+    min-height: 551px;
+  }
+  .note {
+    padding: 3em;
+    max-width: 374px;
+    min-height: 170px;
+    margin: 1em auto;
+  }
+  .note-group p {
+    font-size: 1.8rem;
+    margin-left: 0.5em;
+  }
+  .note-text p {
+    font-size: 1.4rem;
+  }
+  .note-svg {
+    display: block;
+  }
+  .note-pos1 {
+    position: relative;
+  }
+  .note-pos1 .note-svg {
+    position: absolute;
+    right: -15%;
+    top: 50%;
+  }
+  .note-pos1 .note-svg svg {
+    max-width: 50px;
+  }
+  .note-pos2 {
+    position: relative;
+  }
+  .note-pos2 .note-svg {
+    position: absolute;
+    left: -15%;
+    top: 50%;
+  }
+  .note-pos2 .note-svg svg {
+    max-width: 50px;
+  }
 }
