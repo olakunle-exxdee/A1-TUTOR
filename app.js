@@ -68,7 +68,6 @@ const dot4 = document.querySelector(".dot4");
 let showMenu = false;
 
 hamburgerMenu.addEventListener("click", () => {
-  console.log(showMenu);
   if (!showMenu) {
     navbar.classList.add("open-color");
     list.classList.add("open");
@@ -100,7 +99,6 @@ function showPerson(person) {
 }
 // show next person
 rightBtn.addEventListener("click", function () {
-  console.log("hello");
   currentItem++;
   if (currentItem > reviews.length - 1) {
     currentItem = 0;
