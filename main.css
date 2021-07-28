@@ -114,7 +114,7 @@ body {
   line-height: 1.5;
   font-family: "CamptonBook", sans-serif;
   background-color: #f4f7fb;
-  position: relative;
+  z-index: 10;
 }
 .container {
   max-width: 18.75em;
@@ -122,8 +122,8 @@ body {
 }
 /************************* NAVBARs************************************ */
 .header {
-  min-height: 95vh;
-  background-image: linear-gradient(
+  min-height: 100vh;
+  /* background-image: linear-gradient(
     to right bottom,
     #282a4f,
     #252647,
@@ -137,10 +137,9 @@ body {
     #171826,
     #171826,
     #171826
-  );
+  ); */
   color: var(--light-white);
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%;
+  background: var(--dark-blue);
 }
 
 .navbar {
@@ -151,25 +150,24 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 9;
-  display: none;
+  z-index: 1;
+  display: block;
+  z-index: 1;
 }
 .navbar-one {
   text-align: center;
-  position: relative;
 }
 .navbar-two {
-  position: relative;
   text-align: center;
   transition: all 300ms ease-in-out;
-  transform: translateX(200%);
+  display: none;
 }
 
 .logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #171826;
+  background: #1e1f38;
   padding: 2em;
 }
 .menu {
@@ -185,8 +183,7 @@ body {
 
 .list {
   transition: all 300ms ease-in-out;
-  transform: translateX(200%);
-  position: relative;
+  display: none;
 }
 .link {
   display: inline-block;
@@ -219,6 +216,10 @@ body {
 .btn svg {
   margin-left: 1rem;
 }
+.btn:hover,
+.btn:focus {
+  opacity: 0.7;
+}
 .sign-in {
   margin: 3rem auto;
   font-size: 1.2em;
@@ -231,16 +232,13 @@ body {
     #4081bf
   );
 }
-.sign-in:hover,
-.sign-in:focus {
-  opacity: 0.7;
-}
 
 .open {
-  transform: translateX(0%);
+  display: block;
+  transition: all 300ms ease-in-out;
 }
 .open-color {
-  background: var(--dark-blue);
+  background: #1e1f38;
 }
 /************************* NAVBARs************************************ */
 
@@ -607,11 +605,14 @@ body {
 .person-content + .person-img {
   margin-left: 4rem;
 }
+.person-img {
+  display: none;
+}
 .testimonial-text {
-  max-width: 600px;
-  line-height: 2;
+  max-width: 500px;
+  line-height: 1.7;
   color: var(--grey);
-  margin: 2rem 0;
+  margin: 2rem auto;
   font-size: 1.2rem;
 }
 .person-image {
@@ -667,6 +668,19 @@ body {
 }
 
 /*******************************TESTIMONIALS************************************ */
+/*******************************FOOTER************************************ */
+.footer {
+  background: var(--dark-blue);
+  padding: 0 2em;
+}
+.footer .list {
+  transform: translateX(0);
+}
+.footer .list .link {
+  margin: 0 auto;
+  padding: 0.5em 2em;
+}
+/*******************************FOOTER************************************ */
 
 /* media queries  */
 @media only screen and (min-width: 40em) {
@@ -858,6 +872,9 @@ body {
   .left-btn {
     left: -15px;
     top: 50%;
+  }
+  .person-img {
+    display: block;
   }
 }
 @media only screen and (min-width: 64em) {
