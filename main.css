@@ -121,7 +121,8 @@ body {
 }
 /************************* NAVBARs************************************ */
 .header {
-  min-height: 100vh;
+  min-height: 70vh;
+  position: relative;
   /* background-image: linear-gradient(
     to right bottom,
     #282a4f,
@@ -141,6 +142,78 @@ body {
   background: var(--dark-blue);
 }
 
+.header-svg {
+  position: absolute;
+
+  left: 100px;
+  bottom: -70px;
+  animation: wheeler 7s linear infinite;
+}
+.header-svg1 {
+  animation-delay: 2s;
+  left: 200px;
+}
+.header-svg2 {
+  animation-delay: 3.2s;
+  left: 300px;
+}
+.header-svg3 {
+  animation-delay: 5s;
+  left: 400px;
+}
+.header-svg4 {
+  animation-delay: 4.62s;
+  left: 500px;
+}
+.header-svg5 {
+  animation-delay: 2s;
+  left: 1200px;
+}
+.header-svg6 {
+  animation-delay: 7.2s;
+  left: 607px;
+}
+.header-svg7 {
+  animation-delay: 4.55s;
+  left: 400px;
+}
+.header-svg8 {
+  animation-delay: 9.4s;
+  left: 687px;
+}
+.header-svg9 {
+  animation-delay: 8s;
+  left: 590px;
+}
+.header-svg10 {
+  animation-delay: 3.72s;
+  left: 350px;
+}
+.header-svg11 {
+  animation-delay: 3.69s;
+  left: 1100px;
+}
+.header-svg12 {
+  animation-delay: 4.62s;
+  left: 500px;
+}
+.header-svg13 {
+  animation-delay: 3.8s;
+  left: 900px;
+}
+.header-svg14 {
+  animation-delay: 7.2s;
+  left: 1038px;
+}
+.header-svg15 {
+  animation-delay: 5s;
+  left: 1000px;
+}
+.header-svg16 {
+  animation-delay: 3.62s;
+  left: 900px;
+}
+
 .navbar {
   max-width: var(--max-width-section);
   margin: 0 auto;
@@ -149,6 +222,8 @@ body {
 .navbar-one {
   text-align: center;
 }
+
+/* kkdkdkd */
 .navbar-two {
   text-align: center;
   transition: all 300ms ease-in-out;
@@ -191,11 +266,7 @@ body {
 .link:focus {
   background: rgba(5, 5, 5, 0.12);
 }
-.navbar-two {
-  text-align: center;
-  transition: all 300ms ease-in-out;
-  display: none;
-}
+
 .btn {
   display: flex;
   align-items: center;
@@ -379,7 +450,13 @@ body {
     #4492cf,
     #4081bf
   );
+  transform: translateY(-1rem);
   border-radius: 50%;
+  transition: all 300ms ease-in-out;
+}
+.circle:hover,
+.circle:focus {
+  transform: translateY(1rem);
 }
 .why-contents {
   max-width: 500px;
@@ -690,6 +767,44 @@ body {
 } */
 /*******************************FOOTER************************************ */
 
+/* animation */
+/* .header-svg1 {
+  bottom: -50px;
+}
+.header-svg2 {
+  left: 200px;
+  bottom: -50px;
+}
+.header-svg3 {
+  left: 300px;
+  bottom: -50px;
+}
+.header-svg4 {
+  left: 400px;
+  bottom: -60px;
+} */
+@keyframes wheeler {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-150vh);
+    opacity: 0;
+  }
+}
+
 /* media queries  */
 @media only screen and (min-width: 40em) {
   .container {
@@ -771,8 +886,8 @@ body {
 
 @media only screen and (min-width: 48em) {
   /************************* NAVBARs************************************ */
-  /* .header {
-    clip-path: polygon(
+  .header {
+    /* clip-path: polygon(
       50% 0%,
       83% 0,
       100% 0,
@@ -782,8 +897,9 @@ body {
       0 90%,
       0 0,
       17% 0
-    );
-  } */
+    ); */
+    min-height: 100vh;
+  }
   .logo {
     background: transparent;
   }
@@ -802,6 +918,7 @@ body {
     justify-content: start;
   }
   .navbar-two {
+    display: block;
   }
 
   .list {
