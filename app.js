@@ -59,12 +59,10 @@ const personName = document.querySelector(".person-name");
 const personLevel = document.querySelector(".person-level");
 const personImage = document.querySelector(".person-image");
 const info = document.querySelector(".testimonial-text");
-const dots = document.querySelectorAll(".dot");
 const dot1 = document.querySelector(".dot1");
 const dot2 = document.querySelector(".dot2");
 const dot3 = document.querySelector(".dot3");
 const dot4 = document.querySelector(".dot4");
-
 let showMenu = false;
 
 hamburgerMenu.addEventListener("click", () => {
@@ -126,3 +124,9 @@ dot3.addEventListener("click", () => {
 dot4.addEventListener("click", () => {
   showPerson(3);
 });
+
+const objOptions = {
+  root: null,
+  threshold: 0.3,
+  rootMargin: "-100px",
+};
