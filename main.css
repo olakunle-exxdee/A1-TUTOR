@@ -660,7 +660,7 @@ body {
 }
 .started-image6 {
   top: -10px;
-  right: -10px;
+  right: 10px;
 }
 .started-wrapper {
   max-width: var(--max-width-section);
