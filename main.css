@@ -776,8 +776,10 @@ body {
 /*******************************FOOTER************************************ */
 .footer {
   background: var(--dark-blue);
-  padding: 10em 2em 4em 2em;
+  padding: 8em 2em 4em 2em;
+  color: var(--light-white);
 }
+
 .links {
   display: inline-block;
   font-size: 1.4rem;
@@ -797,9 +799,25 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
-.logo-img {
-  max-width: 200px;
+
+.footer-text {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 250px;
   margin: 0 auto;
+}
+.social-media {
+  display: inline-block;
+  transition: opacity 300ms ease-in-out;
+}
+.social-media:hover,
+.social-media:focus {
+  opacity: 0.6;
 }
 /*******************************FOOTER************************************ */
 
@@ -903,6 +921,35 @@ body {
     height: 40px;
     border-radius: 50%;
     position: absolute;
+  }
+  .footer {
+    padding: 10em 2em 4em 2em;
+    text-align: center;
+  }
+  .lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .links {
+    font-size: 1.5rem;
+  }
+
+  .footer-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .logo-img {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  .footer-text {
+    font-size: 1.7rem;
+    max-width: 500px;
+    margin: 4rem auto;
   }
 }
 
