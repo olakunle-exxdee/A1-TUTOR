@@ -3,7 +3,7 @@ const reviews = [
     id: 1,
     name: "susan smith",
     job: "web developer",
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
+    img: "./images/person.png",
     text: ` I was having a hard time understanding Mathematics in school. No
                 matter how long my teacher tries to explain, I couldn’t get and
                 I became ashamed of speaking up in class when I don’t
@@ -15,7 +15,7 @@ const reviews = [
     id: 2,
     name: "anna johnson",
     job: "web designer",
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
+    img: "./images/person.png",
     text: ` I was having a hard time understanding Mathematics in school. No
                 matter how long my teacher tries to explain, I couldn’t get and
                 I became ashamed of speaking up in class when I don’t
@@ -27,7 +27,7 @@ const reviews = [
     id: 3,
     name: "peter jones",
     job: "intern",
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
+    img: "./images/person.png",
     text: ` I was having a hard time understanding Mathematics in school. No
                 matter how long my teacher tries to explain, I couldn’t get and
                 I became ashamed of speaking up in class when I don’t
@@ -39,7 +39,7 @@ const reviews = [
     id: 4,
     name: "bill anderson",
     job: "the boss",
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
+    img: "./images/person.png",
     text: ` I was having a hard time understanding Mathematics in school. No
                 matter how long my teacher tries to explain, I couldn’t get and
                 I became ashamed of speaking up in class when I don’t
@@ -50,6 +50,7 @@ const reviews = [
 ];
 
 const hamburgerMenu = document.querySelector(".menu");
+const header = document.querySelector(".header");
 const navbar = document.querySelector(".navbar");
 const navbar2 = document.querySelector(".navbar-two");
 const list = document.querySelector(".list");
@@ -67,11 +68,13 @@ let showMenu = false;
 
 hamburgerMenu.addEventListener("click", () => {
   if (!showMenu) {
+    header.classList.add("open-header");
     navbar.classList.add("open-color");
     list.classList.add("open");
     navbar2.classList.add("open");
     showMenu = true;
   } else {
+    header.classList.remove("open-header");
     navbar.classList.remove("open-color");
     list.classList.remove("open");
     navbar2.classList.remove("open");

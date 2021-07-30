@@ -116,14 +116,16 @@ body {
   background-color: #f4f7fb;
 }
 .container {
-  max-width: 18.125em;
+  max-width: 144em;
   margin: 0 auto;
+  overflow: hidden;
 }
 /************************* NAVBARs************************************ */
 .header {
+  z-index: 10;
   min-height: 70vh;
   position: relative;
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
     to right bottom,
     #282a4f,
     #252647,
@@ -137,9 +139,13 @@ body {
     #171826,
     #171826,
     #171826
-  ); */
+  );
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
   color: var(--light-white);
   background: var(--dark-blue);
+}
+.open-header {
+  clip-path: none;
 }
 
 .header-svg {
@@ -239,13 +245,26 @@ body {
 }
 .menu {
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
 }
 .menu span {
-  width: 26px;
+  position: absolute;
+  left: 25%;
+  width: 22px;
   height: 2px;
   background: #fff;
-  display: block;
-  margin-bottom: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.menu span:nth-child(1) {
+  top: 40%;
+}
+.menu span:nth-child(2) {
+  bottom: 10%;
 }
 
 .list {
@@ -273,7 +292,7 @@ body {
   justify-content: center;
   max-width: 170px;
   padding: 0.7em 2.5em;
-  border-radius: 3.5em;
+  border-radius: 5em;
   color: #ffffff;
   transition: all 300ms ease-in-out;
 }
@@ -308,7 +327,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 9;
 }
 /************************* NAVBARs************************************ */
 
@@ -316,29 +335,21 @@ body {
 .hero {
   max-width: var(--max-width-section);
   padding: 8em 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
 }
-/* .hero__wrapper {
-} */
+
 .hero_contents {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  margin-bottom: 6rem;
 }
 .hero-text {
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: var(--yellow);
   letter-spacing: 0.75rem;
+  text-transform: uppercase;
 }
 .hero-heading {
   font-size: 5rem;
   font-family: "CamptonBold", sans-serif;
-  letter-spacing: 0.5rem;
   margin: 0.7rem 0 1.4rem 0;
 }
 .hero--sub-text {
@@ -352,6 +363,7 @@ body {
   position: absolute;
   bottom: -0.5rem;
   left: 0;
+  display: none;
 }
 .btn-group {
   display: flex;
@@ -361,6 +373,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
+  display: none;
 }
 .download {
   cursor: pointer;
@@ -388,6 +401,7 @@ body {
 .hero-image-wrapper {
   position: relative;
 }
+
 .circle1 {
   position: absolute;
   width: 300px;
@@ -397,6 +411,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 .circle2 {
   position: absolute;
@@ -407,9 +422,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
+}
+.hero-mobile {
+  max-width: 180px;
+  margin: 0 auto;
 }
 .hero-image {
   position: relative;
+  display: none;
 }
 .hero-image img {
   max-width: 400px;
@@ -464,10 +485,10 @@ body {
 }
 .why-heading {
   color: var(--dark-blue);
-  border-left: 6px solid var(--yellow);
+  /* border-left: 6px solid var(--yellow); */
 }
 .why-header {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   font-size: 2.4rem;
   font-family: "CamptonSemiBold", sans-serif;
 }
@@ -503,13 +524,14 @@ body {
 .why-image-content {
   max-width: 500px;
   margin: 0 auto;
+  margin-top: 6rem;
 }
 
 .success {
   margin: 2rem 0;
 }
 .success .why-header {
-  text-align: center;
+  display: none;
 }
 
 .success-wrapper {
@@ -560,15 +582,15 @@ body {
   margin: 0 auto;
 }
 .features-heading {
-  text-align: center;
-  margin: 8rem 0 4rem 0;
+  margin: 8rem auto 4rem auto;
+  max-width: 400px;
 }
 .features-heading h3 {
+  font-size: 1.2rem;
   letter-spacing: 0.5rem;
   color: var(--grey);
 }
 .features-heading .why-header {
-  max-width: 400px;
   margin: 0 auto;
 }
 .features-wrapper {
@@ -632,6 +654,7 @@ body {
   padding: 4rem 0;
   color: var(--white);
   background-image: linear-gradient(to bottom, #5ac8fa, 89%, #4081bf);
+
   text-align: center;
 }
 .started img {
@@ -726,11 +749,27 @@ body {
   border-radius: 50%;
   margin: 0 auto;
 }
-.content-group p {
+.person-img-mobile img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.content-group {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  justify-content: start;
+}
+.person-img-mobile + .test-context {
+  margin-left: 2rem;
+}
+.person-level {
   color: var(--grey);
   font-size: 1.2rem;
 }
-.content-group h3 {
+.person-name {
   color: var(--dark-blue);
   font-family: "CamptonBold";
   font-size: 1.6rem;
@@ -778,21 +817,35 @@ body {
   background: var(--dark-blue);
   padding: 8em 2em 4em 2em;
   color: var(--light-white);
+  clip-path: polygon(64% 5%, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 14%);
+  text-align: center;
+}
+.logo-img {
+  max-width: 100px;
+  margin: 0 auto;
+}
+.lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 2em auto;
 }
 
 .links {
   display: inline-block;
   font-size: 1.4rem;
   color: #ffffff;
-  padding: 0.7em 0;
+  padding: 1em 1.5em;
   background: transparent;
-  margin: 1rem 0;
+
   border-radius: 1.9em;
   transition: all 300ms ease-in-out;
 }
 .links:hover,
 .links:focus {
-  opacity: 0.7;
+  background: rgba(5, 5, 5, 0.12);
 }
 
 .footer-wrapper {
@@ -845,13 +898,6 @@ body {
 
 /* media queries  */
 @media only screen and (min-width: 40em) {
-  .container {
-    max-width: 90em;
-    margin: 0 auto;
-  }
-  .btn-group {
-    flex-direction: row;
-  }
   .download + .web {
     margin-left: 2rem;
   }
@@ -866,14 +912,51 @@ body {
 
     padding: 1em 3em;
   }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero_contents {
+    margin-bottom: 0;
+  }
   .hero-heading {
     font-size: 6rem;
     letter-spacing: 0.75rem;
   }
+  #bold-svg {
+    display: block;
+  }
+  .btn-group {
+    display: flex;
+    flex-direction: row;
+  }
+  .circle1 {
+    display: block;
+  }
+  .circle2 {
+    display: block;
+  }
+  .hero-mobile {
+    display: none;
+  }
+  .hero-image {
+    position: relative;
+    display: block;
+  }
+  .hero-image img {
+    max-width: 600px;
+  }
+  .why-heading {
+    border-left: 8px solid var(--yellow);
+  }
   .why-header {
     font-size: 3rem;
-    margin-left: 2rem;
+    margin-left: 0;
+    text-align: center;
   }
+
   .why-text {
     font-size: 1.4rem;
   }
@@ -901,10 +984,10 @@ body {
     font-size: 1.4rem;
   }
 
-  .content-group p {
+  .person-level {
     font-size: 1.4rem;
   }
-  .content-group h3 {
+  .person-name {
     font-size: 2rem;
   }
   .person {
@@ -926,14 +1009,7 @@ body {
     padding: 10em 2em 4em 2em;
     text-align: center;
   }
-  .lists {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 600px;
-    margin: 0 auto;
-  }
+
   .links {
     font-size: 1.5rem;
   }
@@ -956,17 +1032,6 @@ body {
 @media only screen and (min-width: 48em) {
   /************************* NAVBARs************************************ */
   .header {
-    /* clip-path: polygon(
-      50% 0%,
-      83% 0,
-      100% 0,
-      100% 90%,
-      65% 95%,
-      32% 95%,
-      0 90%,
-      0 0,
-      17% 0
-    ); */
     min-height: 100vh;
   }
   .logo {
@@ -1026,6 +1091,9 @@ body {
 
   /************************* heroes************************************ */
 
+  .success .why-header {
+    display: block;
+  }
   .box {
     max-width: 175px;
   }
@@ -1067,6 +1135,9 @@ body {
   }
   .person-img {
     display: block;
+  }
+  .person-img-mobile {
+    display: none;
   }
 }
 @media only screen and (min-width: 64em) {
@@ -1126,6 +1197,7 @@ body {
   }
   .why-header {
     font-size: 3.6rem;
+    /* text-align: left; */
   }
 
   .why-text {
@@ -1146,6 +1218,12 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 2em;
+  }
+  .features-heading {
+    text-align: center;
+  }
+  .key {
+    font-size: 1.4rem;
   }
   .notes-images {
     display: block;
