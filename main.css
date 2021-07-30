@@ -228,6 +228,9 @@ body {
   background: var(--dark-blue);
   padding: 2em;
 }
+.logo-navbar img {
+  width: 40px;
+}
 .menu {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.1);
