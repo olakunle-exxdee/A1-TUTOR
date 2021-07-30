@@ -125,24 +125,9 @@ body {
   z-index: 10;
   min-height: 70vh;
   position: relative;
-  background-image: linear-gradient(
-    to right bottom,
-    #282a4f,
-    #252647,
-    #21233f,
-    #1e1f38,
-    #1b1c30,
-    #1a1b2d,
-    #181929,
-    #171826,
-    #171826,
-    #171826,
-    #171826,
-    #171826
-  );
+  background: linear-gradient(to right, #011d29, #023045, #011d29, #011d29);
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
   color: var(--light-white);
-  background: var(--dark-blue);
 }
 .open-header {
   clip-path: none;
@@ -814,7 +799,7 @@ body {
 /*******************************TESTIMONIALS************************************ */
 /*******************************FOOTER************************************ */
 .footer {
-  background: var(--dark-blue);
+  background: linear-gradient(to bottom, #011d29, #023045, #023045, #023045);
   padding: 8em 2em 4em 2em;
   color: var(--light-white);
   clip-path: polygon(64% 5%, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 14%);
@@ -1008,6 +993,11 @@ body {
   .footer {
     padding: 10em 2em 4em 2em;
     text-align: center;
+    clip-path: ellipse(81% 68% at 50% 32%);
+    transform: rotate(180deg);
+  }
+  .footer-wrapper {
+    transform: rotate(-180deg);
   }
 
   .links {
@@ -1033,6 +1023,7 @@ body {
   /************************* NAVBARs************************************ */
   .header {
     min-height: 100vh;
+    clip-path: ellipse(81% 68% at 50% 32%);
   }
   .logo {
     background: transparent;
