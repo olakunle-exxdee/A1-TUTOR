@@ -133,3 +133,41 @@ const objOptions = {
   threshold: 0.3,
   rootMargin: "-100px",
 };
+
+window.sr = ScrollReveal();
+
+sr.reveal(".animate-left", {
+  origin: "left",
+  duration: 500,
+  distance: "10rem",
+  easing: "ease-in",
+  delay: 300,
+});
+
+sr.reveal(".animate-right", {
+  origin: "right",
+  duration: 500,
+  distance: "10rem",
+  easing: "ease-in",
+  delay: 300,
+});
+
+sr.reveal(".animate-top", {
+  origin: "top",
+  duration: 500,
+  distance: "10rem",
+  easing: "ease-in",
+  delay: 300,
+});
+
+sr.reveal(".animate-bottom", {
+  origin: "bottom",
+  duration: 500,
+  distance: "10rem",
+  easing: "ease-in",
+  delay: 300,
+});
+
+ScrollReveal().reveal(".sequenced", {
+  interval: 1000,
+});

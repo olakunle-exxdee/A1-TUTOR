@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./main.css" />
     <title>A1 Tutor</title>
   </head>
@@ -199,9 +200,11 @@
               </div>
             </div>
             <ul class="list">
-              <li class="item"><a href="#" class="link">Home</a></li>
-              <li class="item"><a href="#" class="link">About </a></li>
-              <li class="item"><a href="#" class="link">Services</a></li>
+              <li class="item"><a href="index.html" class="link">Home</a></li>
+              <li class="item"><a href="about.html" class="link">About</a></li>
+              <li class="item">
+                <a href="services.html" class="link">Services</a>
+              </li>
               <li class="item"><a href="#" class="link">Contacts</a></li>
             </ul>
           </div>
@@ -238,7 +241,7 @@
         </nav>
         <section class="hero">
           <div class="hero__wrapper">
-            <div class="hero_contents">
+            <div class="hero_contents animate-left">
               <p class="hero-text">quality learning</p>
               <h1 class="hero-heading">
                 ON THE <br />
@@ -351,7 +354,7 @@
                 </a>
               </div>
             </div>
-            <div class="hero-image-wrapper">
+            <div class="hero-image-wrapper animate-right">
               <div class="circle1"></div>
               <div class="circle2"></div>
               <img
@@ -373,7 +376,7 @@
           </div>
         </div>
         <div class="why-wrapper">
-          <div class="why-contents">
+          <div class="why-contents animate-left">
             <p class="hero-text">quality learning</p>
             <div class="why-heading">
               <h2 class="why-header">
@@ -418,7 +421,7 @@
               </svg>
             </a>
           </div>
-          <div class="why-image-content">
+          <div class="why-image-content animate-top">
             <img src="./images/bt.png" alt="a1tutor" />
           </div>
         </div>
@@ -426,13 +429,13 @@
       <section class="features">
         <div class="features-heading">
           <h3 class="key">KEY FEATURES</h3>
-          <h2 class="why-header">
+          <h2 class="why-header animate-left">
             Features of <span class="blue">A1tutors</span> App
           </h2>
         </div>
         <div class="features-wrapper">
-          <div class="notes-group">
-            <div class="note note-pos1">
+          <div class="notes-group sequenced">
+            <div class="note note-pos1 animate-top">
               <div class="note-group">
                 <img src="./images/note-img.svg" alt="note" />
                 <p>Concise Lesson Notes</p>
@@ -462,7 +465,7 @@
                 </svg>
               </div>
             </div>
-            <div class="note note-pos1">
+            <div class="note note-pos1 animate-left">
               <div class="note-group">
                 <img src="./images/note-img.svg" alt="note" />
                 <p>Interactive Instructional Videos</p>
@@ -493,7 +496,7 @@
                 </svg>
               </div>
             </div>
-            <div class="note note-pos1">
+            <div class="note note-pos1 animate-bottom">
               <div class="note-group">
                 <img src="./images/note-img.svg" alt="note" />
                 <p>Experienced Subject Teachers</p>
@@ -528,7 +531,7 @@
           </div>
 
           <div class="notes-group">
-            <div class="note note-pos2">
+            <div class="note note-pos2 animate-right">
               <div class="note-group">
                 <img src="./images/note-img.svg" alt="note" />
                 <p>Online/Offline Mock Test (CBT)</p>
@@ -559,7 +562,7 @@
                 </svg>
               </div>
             </div>
-            <div class="note note-pos2">
+            <div class="note note-pos2 animate-top">
               <div class="note-group">
                 <img src="./images/note-img.svg" alt="note" />
                 <p>Quiz & Performance Analysis</p>
@@ -589,7 +592,7 @@
                 </svg>
               </div>
             </div>
-            <div class="note note-pos2">
+            <div class="note note-pos2 animate-bottom">
               <div class="note-group">
                 <img src="./images/note-img.svg" alt="note" />
                 <p>Tutor Live Chat</p>
@@ -631,7 +634,7 @@
 
         <div class="started-wrapper">
           <div class="started-heading">
-            <h2 class="why-header">Get Started</h2>
+            <h2 class="why-header animate-left">Get Started</h2>
             <p>
               It doesnt matter what platform you’re on, learn anywhere, any time
             </p>
@@ -720,7 +723,7 @@
         </div>
       </section>
       <section class="success">
-        <h2 class="why-header">
+        <h2 class="why-header animate-left">
           Our <span class="blue">Success</span> matrics
         </h2>
 
@@ -785,7 +788,7 @@
       <section class="testimonial">
         <div class="features-heading">
           <h3>TESTIMONIALS</h3>
-          <h2 class="why-header">
+          <h2 class="why-header animate-left">
             What our <span class="blue">clients</span> say
           </h2>
         </div>
@@ -949,6 +952,7 @@
         </div>
       </footer>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>
