@@ -6,6 +6,7 @@
   margin: 0;
 }
 :root {
+  --blue: #336799;
   --dark-blue: #0d1a26;
   --light-blue: #5ac8fa;
   --light-white: #f4f7fb;
@@ -883,6 +884,69 @@ body {
     opacity: 0;
   }
 }
+/* services */
+.service {
+  max-width: var(--max-width-section);
+  margin: 4rem auto;
+  padding: 0 2em;
+}
+.service-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-box {
+  position: relative;
+  background: var(--white);
+  padding: 5em 3em;
+  border-radius: 10px;
+  max-width: 320px;
+  margin: 1em auto 4em auto;
+}
+.service-heading {
+  color: var(--blue);
+  font-size: 1.8rem;
+  font-family: "CamptonBold", sans-serif;
+  margin: 1em 0;
+}
+.service-text {
+  font-size: 1.2rem;
+  color: var(--dark-blue);
+}
+.service-text-heading {
+  font-size: 1.4rem;
+  color: var(--dark-blue);
+  font-family: "CamptonSemiBold", sans-serif;
+  margin: 4rem auto;
+}
+.service-blue {
+  position: absolute;
+  width: 250px;
+  height: 10px;
+  background: var(--light-blue);
+  top: 0;
+  left: 0;
+  border-top-left-radius: 5px;
+}
+.service-circle {
+  background: var(--light-white);
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  right: 20px;
+  top: -20px;
+}
+
+.service-image {
+  position: absolute;
+  right: 20px;
+  top: -11px;
+}
+.service-image img {
+  width: 60px;
+  height: 60px;
+}
+/* services */
 
 /* media queries  */
 @media only screen and (min-width: 40em) {
@@ -1020,6 +1084,41 @@ body {
     max-width: 500px;
     margin: 4rem auto;
   }
+  .service {
+    max-width: var(--max-width-section);
+    margin: 6rem auto;
+    padding: 0 2em;
+  }
+  .service-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .service-box {
+    position: relative;
+    background: var(--white);
+    padding: 5em 3em;
+    border-radius: 10px;
+    max-width: 320px;
+    margin: 1em auto 4em auto;
+  }
+  .service-heading {
+    color: var(--blue);
+    font-size: rem;
+    font-family: "CamptonBold", sans-serif;
+    margin: 0 0 1em 0;
+  }
+  .service-text {
+    font-size: 1.3rem;
+    color: var(--dark-blue);
+  }
+  .service-text-heading {
+    font-size: 1.8rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 8rem auto;
+  }
+
+  /* services */
 }
 
 @media only screen and (min-width: 48em) {
@@ -1133,6 +1232,34 @@ body {
   .person-img-mobile {
     display: none;
   }
+  /* service */
+
+  .service-box {
+    position: relative;
+    background: var(--white);
+    padding: 5em 3em;
+    border-radius: 10px;
+    max-width: 330px;
+    margin: 1em auto 4em auto;
+  }
+  .service-heading {
+    color: var(--blue);
+    font-size: 2.2rem;
+    font-family: "CamptonBold", sans-serif;
+    margin: 0 0 1rem 0;
+  }
+  .service-text {
+    font-size: 1.4rem;
+    color: var(--dark-blue);
+  }
+  /* .hero-service {
+    margin-top: 10em;
+  } */
+  .hero-service .hero-heading {
+    max-width: 600px;
+  }
+
+  /* services */
 }
 @media only screen and (min-width: 64em) {
   /************************* heroes************************************ */
@@ -1265,5 +1392,10 @@ body {
   .started img {
     position: absolute;
     display: block;
+  }
+
+  /* service */
+  .hero-service {
+    margin-top: 10em;
   }
 }
