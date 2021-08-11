@@ -241,7 +241,7 @@
           </div>
         </nav>
         <section class="hero">
-          <div class="hero__wrapper">
+          <div class="hero__wrapper animate-left">
             <div class="hero_contents hero-service">
               <p class="hero-text">something for everyone</p>
               <h1 class="hero-heading">
@@ -254,14 +254,14 @@
       </header>
       <section class="service">
         <div class="service-wrapper">
-          <p class="service-text-heading">
+          <p class="service-text-heading animate-right">
             We are a full-service Educational Technology (Edtech) company with a
             bouquet of services for personal (single) users, corporate
             organisations and educational institutions. Our services are
             explained below
           </p>
-          <div class="service-group">
-            <div class="service-box">
+          <div class="service-group sequenced">
+            <div class="service-box animate-left">
               <div class="service-blue"></div>
               <div class="service-circle"></div>
               <div class="service-image">
@@ -278,7 +278,7 @@
                 and videos
               </p>
             </div>
-            <div class="service-box">
+            <div class="service-box animate-bottom">
               <div class="service-blue"></div>
               <div class="service-circle"></div>
               <div class="service-image">
@@ -296,7 +296,7 @@
                 here to sign up for the Examination Preparation Plan.
               </p>
             </div>
-            <div class="service-box">
+            <div class="service-box animate-top">
               <div class="service-blue"></div>
               <div class="service-circle"></div>
               <div class="service-image">
@@ -312,7 +312,7 @@
                 with Friends’ feature. Click here to take a CBT (Mock) Test
               </p>
             </div>
-            <div class="service-box">
+            <div class="service-box animate-right">
               <div class="service-blue"></div>
               <div class="service-circle"></div>
               <div class="service-image">
@@ -329,7 +329,7 @@
                 package
               </p>
             </div>
-            <div class="service-box">
+            <div class="service-box animate-bottom">
               <div class="service-blue"></div>
               <div class="service-circle"></div>
               <div class="service-image">
@@ -344,7 +344,7 @@
                 free student guidance session
               </p>
             </div>
-            <div class="service-box">
+            <div class="service-box animate-top">
               <div class="service-blue"></div>
               <div class="service-circle"></div>
               <div class="service-image">
@@ -435,6 +435,44 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(".animate-left", {
+        origin: "left",
+        duration: 500,
+        distance: "10rem",
+        easing: "ease-in",
+        delay: 300,
+      });
+      sr.reveal(".animate-right", {
+        origin: "right",
+        duration: 500,
+        distance: "10rem",
+        easing: "ease-in",
+        delay: 300,
+      });
+
+      sr.reveal(".animate-top", {
+        origin: "top",
+        duration: 500,
+        distance: "10rem",
+        easing: "ease-in",
+        delay: 300,
+      });
+
+      sr.reveal(".animate-bottom", {
+        origin: "bottom",
+        duration: 500,
+        distance: "10rem",
+        easing: "ease-in",
+        delay: 300,
+      });
+      ScrollReveal().reveal(".sequenced", {
+        interval: 1000,
+      });
+    </script>
+
     <script src="app.js"></script>
   </body>
 </html>
