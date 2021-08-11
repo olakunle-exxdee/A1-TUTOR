@@ -1389,6 +1389,9 @@ body {
   .note-pos2 .note-svg svg {
     max-width: 50px;
   }
+  .started {
+    clip-path: ellipse(90% 51% at 51% 50%);
+  }
   .started img {
     position: absolute;
     display: block;
