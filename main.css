@@ -485,6 +485,9 @@ body {
 .why-contents .download {
   max-width: 200px;
 }
+.why-image-content .download {
+  max-width: 250px;
+}
 .why-text {
   color: var(--text-color);
   font-size: 1.2rem;
@@ -948,6 +951,41 @@ body {
 }
 /* services */
 
+/* client */
+.client {
+  max-width: var(--max-width-section);
+  padding: 8em 2em;
+  margin: 0 auto;
+}
+
+/* values */
+.values {
+  max-width: var(--max-width-section);
+  margin: 6rem auto;
+  padding: 0 2em;
+}
+.values-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.values-box {
+  background: var(--white);
+  padding: 2em 1em;
+  border-radius: 5px;
+  max-width: 350px;
+  margin: 1em auto 4em auto;
+  border-top: 5px solid var(--light-blue);
+}
+.value-header {
+  font-family: "CamptonSemiBold";
+  font-size: 2rem;
+  padding: 1em 0;
+}
+.value-text {
+  font-size: 1.3rem;
+  max-width: 260px;
+}
+
 /* media queries  */
 @media only screen and (min-width: 40em) {
   .download + .web {
@@ -1008,6 +1046,10 @@ body {
     margin-left: 0;
     text-align: center;
   }
+  .about-header {
+    text-align: left;
+    margin-left: 1rem;
+  }
 
   .why-text {
     font-size: 1.4rem;
@@ -1060,11 +1102,6 @@ body {
   .footer {
     padding: 10em 2em 4em 2em;
     text-align: center;
-    clip-path: ellipse(81% 68% at 50% 32%);
-    transform: rotate(180deg);
-  }
-  .footer-wrapper {
-    transform: rotate(-180deg);
   }
 
   .links {
@@ -1119,6 +1156,23 @@ body {
   }
 
   /* services */
+  .values-box {
+    background: var(--white);
+    padding: 2em 1em;
+    border-radius: 5px;
+    max-width: 275px;
+    margin: 1em auto 4em auto;
+    border-top: 5px solid var(--light-blue);
+  }
+  .value-header {
+    font-family: "CamptonSemiBold";
+    font-size: 1.9rem;
+    padding: 1em 0;
+  }
+  .value-text {
+    font-size: 1.3rem;
+    max-width: 300px;
+  }
 }
 
 @media only screen and (min-width: 48em) {
@@ -1262,6 +1316,10 @@ body {
   /* services */
 }
 @media only screen and (min-width: 64em) {
+  .header {
+    min-height: 100vh;
+    clip-path: ellipse(81% 68% at 50% 32%);
+  }
   /************************* heroes************************************ */
 
   .hero {
@@ -1316,19 +1374,33 @@ body {
     flex-basis: 100%;
     max-width: 1000px;
   }
+  .why-image-content {
+    flex-basis: 100%;
+    max-width: 1000px;
+  }
+
   .why-header {
     font-size: 3.6rem;
-    /* text-align: left; */
   }
 
   .why-text {
     font-size: 1.6rem;
     margin: 1rem 0;
   }
-  .why-image-content {
-    flex-basis: 100%;
-    max-width: 1000px;
+  .about-wrapper {
+    align-items: stretch;
   }
+
+  .about-image-content {
+    margin: 10rem 0 0 4rem;
+  }
+  .about-content-header {
+    margin-bottom: 4rem;
+  }
+  .about-why {
+    margin: 8rem auto;
+  }
+
   /************************* WHYYY************************************ */
 
   .features {
@@ -1400,5 +1472,12 @@ body {
   /* service */
   .hero-service {
     margin-top: 10em;
+  }
+  .footer {
+    clip-path: ellipse(81% 68% at 50% 32%);
+    transform: rotate(180deg);
+  }
+  .footer-wrapper {
+    transform: rotate(-180deg);
   }
 }
