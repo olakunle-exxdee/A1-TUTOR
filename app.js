@@ -49,6 +49,32 @@ const reviews = [
   },
 ];
 
+const team = [
+  {
+    id: 1,
+    name: "susan smith",
+    job: "web developer",
+    img: "./images/team1.png",
+  },
+  {
+    id: 2,
+    name: "anna johnson",
+    job: "web designer",
+    img: "./images/team2.png",
+  },
+  {
+    id: 3,
+    name: "peter jones",
+    job: "intern",
+    img: "./images/team3.png",
+  },
+  {
+    id: 4,
+    name: "bill anderson",
+    job: "the boss",
+    img: "./images/team4.png",
+  },
+];
 const hamburgerMenu = document.querySelector(".menu");
 const header = document.querySelector(".header");
 const navbar = document.querySelector(".navbar");
@@ -64,6 +90,10 @@ const dot1 = document.querySelector(".dot1");
 const dot2 = document.querySelector(".dot2");
 const dot3 = document.querySelector(".dot3");
 const dot4 = document.querySelector(".dot4");
+const teamDot1 = document.querySelector(".team-dot1");
+const teamDot2 = document.querySelector(".team-dot2");
+const teamDot3 = document.querySelector(".team-dot3");
+const teamDot4 = document.querySelector(".team-dot4");
 let showMenu = false;
 
 hamburgerMenu.addEventListener("click", () => {
