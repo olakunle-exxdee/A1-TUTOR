@@ -16,10 +16,6 @@
   --grey-dark: #48484a;
   --yellow: #f2c94c;
   --max-width-section: 120em;
-  --sm: 40em;
-  --md: 48em;
-  --lg: 64em;
-  --xl: 80em;
 }
 
 html {
@@ -104,11 +100,11 @@ body {
   font-family: "CamptonBook", sans-serif;
   background-color: #f4f7fb;
 }
-/* .container {
+.container {
   max-width: 160em;
   margin: 0 auto;
   overflow: hidden;
-} */
+}
 /************************* NAVBARs************************************ */
 .header {
   z-index: 10;
@@ -1423,7 +1419,7 @@ body {
 }
 @media only screen and (min-width: 64em) {
   .header {
-    min-height: 60vh;
+    min-height: 90vh;
     clip-path: ellipse(81% 68% at 50% 32%);
   }
   /************************* heroes************************************ */
@@ -1622,7 +1618,7 @@ body {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.4);
     padding: 2rem;
-    backdrop-filter: blur(4px);
+
     filter: drop-shadow(0px 3px 3px rgba(42, 88, 116, 0.15));
   }
   .level-list {

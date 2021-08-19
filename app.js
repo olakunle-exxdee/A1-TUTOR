@@ -3,7 +3,7 @@ const reviews = [
     id: 1,
     name: "susan smith",
     job: "web developer",
-    img: "./images/person.png",
+    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
     text: ` I was having a hard time understanding Mathematics in school. No
                 matter how long my teacher tries to explain, I couldn’t get and
                 I became ashamed of speaking up in class when I don’t
@@ -15,7 +15,7 @@ const reviews = [
     id: 2,
     name: "anna johnson",
     job: "web designer",
-    img: "./images/person.png",
+    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
     text: ` I was having a hard time understanding Mathematics in school. No
                 matter how long my teacher tries to explain, I couldn’t get and
                 I became ashamed of speaking up in class when I don’t
@@ -27,7 +27,7 @@ const reviews = [
     id: 3,
     name: "peter jones",
     job: "intern",
-    img: "./images/person.png",
+    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
     text: ` I was having a hard time understanding Mathematics in school. No
                 matter how long my teacher tries to explain, I couldn’t get and
                 I became ashamed of speaking up in class when I don’t
@@ -39,7 +39,7 @@ const reviews = [
     id: 4,
     name: "bill anderson",
     job: "the boss",
-    img: "./images/person.png",
+    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
     text: ` I was having a hard time understanding Mathematics in school. No
                 matter how long my teacher tries to explain, I couldn’t get and
                 I became ashamed of speaking up in class when I don’t
@@ -86,6 +86,9 @@ const personName = document.querySelector(".person-name");
 const personLevel = document.querySelector(".person-level");
 const personImage = document.querySelector(".person-image");
 const info = document.querySelector(".testimonial-text");
+const teamName = document.querySelector(".team-member-name");
+const teamJob = document.querySelector(".team-member-job");
+const teamImage = document.querySelector(".team-member-img");
 const dot1 = document.querySelector(".dot1");
 const dot2 = document.querySelector(".dot2");
 const dot3 = document.querySelector(".dot3");
@@ -114,6 +117,7 @@ hamburgerMenu.addEventListener("click", () => {
 
 // set starting item
 let currentItem = 0;
+
 window.addEventListener("DOMContentLoaded", function () {
   const item = reviews[currentItem];
   personImage.src = item.img;
@@ -121,6 +125,12 @@ window.addEventListener("DOMContentLoaded", function () {
   personLevel.textContent = item.job;
   info.textContent = item.text;
 });
+// window.addEventListener("DOMContentLoaded", function () {
+//   const item = team[currentTeam];
+//   teamImage.src = item.img;
+//   teamName.textContent = item.name;
+//   teamJob.textContent = item.job;
+// });
 function showPerson(person) {
   const item = reviews[person];
   personImage.src = item.img;
@@ -128,6 +138,12 @@ function showPerson(person) {
   personLevel.textContent = item.job;
   info.textContent = item.text;
 }
+// function showTeam(member) {
+//   const item = team[member];
+//   teamImage.src = item.img;
+//   teamName.textContent = item.name;
+//   teamJob.textContent = item.job;
+// }
 // show next person
 rightBtn.addEventListener("click", function () {
   currentItem++;
@@ -157,6 +173,19 @@ dot3.addEventListener("click", () => {
 dot4.addEventListener("click", () => {
   showPerson(3);
 });
+// // team member
+// teamDot1.addEventListener("click", () => {
+//   showTeam(0);
+// });
+// teamDot2.addEventListener("click", () => {
+//   showTeam(1);
+// });
+// teamDot3.addEventListener("click", () => {
+//   showTeam(2);
+// });
+// teamDot4.addEventListener("click", () => {
+//   showTeam(3);
+// });
 
 const objOptions = {
   root: null,
