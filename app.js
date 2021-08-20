@@ -1,103 +1,25 @@
-const reviews = [
-  {
-    id: 1,
-    name: "susan smith",
-    job: "web developer",
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
-    text: ` I was having a hard time understanding Mathematics in school. No
-                matter how long my teacher tries to explain, I couldn’t get and
-                I became ashamed of speaking up in class when I don’t
-                understand. With A1tutor, I can learn on my own with simplified
-                notes for the complex equations and explanatory videos that made
-                mathematics fun. I made a B+ in my WAEC.`,
-  },
-  {
-    id: 2,
-    name: "anna johnson",
-    job: "web designer",
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
-    text: ` I was having a hard time understanding Mathematics in school. No
-                matter how long my teacher tries to explain, I couldn’t get and
-                I became ashamed of speaking up in class when I don’t
-                understand. With A1tutor, I can learn on my own with simplified
-                notes for the complex equations and explanatory videos that made
-                mathematics fun. I made a B+ in my WAEC.`,
-  },
-  {
-    id: 3,
-    name: "peter jones",
-    job: "intern",
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
-    text: ` I was having a hard time understanding Mathematics in school. No
-                matter how long my teacher tries to explain, I couldn’t get and
-                I became ashamed of speaking up in class when I don’t
-                understand. With A1tutor, I can learn on my own with simplified
-                notes for the complex equations and explanatory videos that made
-                mathematics fun. I made a B+ in my WAEC.`,
-  },
-  {
-    id: 4,
-    name: "bill anderson",
-    job: "the boss",
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
-    text: ` I was having a hard time understanding Mathematics in school. No
-                matter how long my teacher tries to explain, I couldn’t get and
-                I became ashamed of speaking up in class when I don’t
-                understand. With A1tutor, I can learn on my own with simplified
-                notes for the complex equations and explanatory videos that made
-                mathematics fun. I made a B+ in my WAEC.`,
-  },
-];
-
-const team = [
-  {
-    id: 1,
-    name: "susan smith",
-    job: "web developer",
-    img: "./images/team1.png",
-  },
-  {
-    id: 2,
-    name: "anna johnson",
-    job: "web designer",
-    img: "./images/team2.png",
-  },
-  {
-    id: 3,
-    name: "peter jones",
-    job: "intern",
-    img: "./images/team3.png",
-  },
-  {
-    id: 4,
-    name: "bill anderson",
-    job: "the boss",
-    img: "./images/team4.png",
-  },
-];
 const hamburgerMenu = document.querySelector(".menu");
 const header = document.querySelector(".header");
 const navbar = document.querySelector(".navbar");
 const navbar2 = document.querySelector(".navbar-two");
 const list = document.querySelector(".list");
-const leftBtn = document.querySelector(".left-btn");
-const rightBtn = document.querySelector(".right-btn");
-const personName = document.querySelector(".person-name");
-const personLevel = document.querySelector(".person-level");
-const personImage = document.querySelector(".person-image");
-const info = document.querySelector(".testimonial-text");
-const teamName = document.querySelector(".team-member-name");
-const teamJob = document.querySelector(".team-member-job");
-const teamImage = document.querySelector(".team-member-img");
-const dot1 = document.querySelector(".dot1");
-const dot2 = document.querySelector(".dot2");
-const dot3 = document.querySelector(".dot3");
-const dot4 = document.querySelector(".dot4");
-const teamDot1 = document.querySelector(".team-dot1");
-const teamDot2 = document.querySelector(".team-dot2");
-const teamDot3 = document.querySelector(".team-dot3");
-const teamDot4 = document.querySelector(".team-dot4");
+
 let showMenu = false;
+
+const swiper = new Swiper(".swiper-container", {
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    loop: true,
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 hamburgerMenu.addEventListener("click", () => {
   if (!showMenu) {
@@ -114,78 +36,6 @@ hamburgerMenu.addEventListener("click", () => {
     showMenu = false;
   }
 });
-
-// set starting item
-let currentItem = 0;
-
-window.addEventListener("DOMContentLoaded", function () {
-  const item = reviews[currentItem];
-  personImage.src = item.img;
-  personName.textContent = item.name;
-  personLevel.textContent = item.job;
-  info.textContent = item.text;
-});
-// window.addEventListener("DOMContentLoaded", function () {
-//   const item = team[currentTeam];
-//   teamImage.src = item.img;
-//   teamName.textContent = item.name;
-//   teamJob.textContent = item.job;
-// });
-function showPerson(person) {
-  const item = reviews[person];
-  personImage.src = item.img;
-  personName.textContent = item.name;
-  personLevel.textContent = item.job;
-  info.textContent = item.text;
-}
-// function showTeam(member) {
-//   const item = team[member];
-//   teamImage.src = item.img;
-//   teamName.textContent = item.name;
-//   teamJob.textContent = item.job;
-// }
-// show next person
-rightBtn.addEventListener("click", function () {
-  currentItem++;
-  if (currentItem > reviews.length - 1) {
-    currentItem = 0;
-  }
-  showPerson(currentItem);
-});
-// show prev person
-leftBtn.addEventListener("click", function () {
-  currentItem--;
-  if (currentItem < 0) {
-    currentItem = reviews.length - 1;
-  }
-  showPerson(currentItem);
-});
-
-dot1.addEventListener("click", () => {
-  showPerson(0);
-});
-dot2.addEventListener("click", () => {
-  showPerson(1);
-});
-dot3.addEventListener("click", () => {
-  showPerson(2);
-});
-dot4.addEventListener("click", () => {
-  showPerson(3);
-});
-// // team member
-// teamDot1.addEventListener("click", () => {
-//   showTeam(0);
-// });
-// teamDot2.addEventListener("click", () => {
-//   showTeam(1);
-// });
-// teamDot3.addEventListener("click", () => {
-//   showTeam(2);
-// });
-// teamDot4.addEventListener("click", () => {
-//   showTeam(3);
-// });
 
 const objOptions = {
   root: null,

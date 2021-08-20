@@ -560,6 +560,7 @@ body {
 .features-heading {
   margin: 8rem auto 4rem auto;
   max-width: 400px;
+  text-align: center;
 }
 .features-heading h3 {
   font-size: 1.2rem;
@@ -695,9 +696,7 @@ body {
   margin: 4rem auto;
   padding: 0 2em;
 }
-/* .testimonial-wrapper {
-  position: relative;
-} */
+
 .person {
   display: flex;
   align-items: center;
@@ -750,41 +749,9 @@ body {
   font-family: "CamptonBold";
   font-size: 1.6rem;
 }
-.left-btn,
-.right-btn {
-  cursor: pointer;
-  background: #dde1e6;
-  display: none;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  position: absolute;
-}
-.right-btn {
-  right: -10px;
-  top: 50%;
-}
-.left-btn {
-  left: -10px;
-  top: 50%;
-}
-.dot-group {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 80px;
-  margin: 4rem auto;
-}
-.dot {
-  cursor: pointer;
-  width: 10px;
-  height: 10px;
-  background: var(--grey);
-  border-radius: 50%;
-}
-.dot:hover,
-.dot:focus {
-  background: var(--light-blue);
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
 }
 
 /*******************************TESTIMONIALS************************************ */
@@ -1041,10 +1008,7 @@ body {
   margin: 0 auto;
 }
 .team-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
 }
 .team-wrapper-mobile {
   max-width: 300px;
@@ -1055,6 +1019,9 @@ body {
   background: var(--white);
   max-width: 277px;
   text-align: center;
+}
+.team-member {
+  margin-bottom: 4rem;
 }
 .team-member-name {
   font-size: 1.6rem;
@@ -1081,7 +1048,18 @@ body {
 .team-dot:focus {
   background: var(--light-blue);
 }
+/* form */
 
+.form-section {
+  text-align: center;
+}
+.form-img {
+  max-width: 80px;
+  margin: 1rem auto;
+}
+.form-text {
+  font-size: 1.1rem;
+}
 /* media queries  */
 @media only screen and (min-width: 40em) {
   .download + .web {
@@ -1353,11 +1331,6 @@ body {
     font-size: 2.4rem;
   }
 
-  /* .notes-images {
-    display: block;
-    max-width: 300px;
-    margin: 2em auto;
-  } */
   .started-btn-group {
     max-width: 800px;
   }
@@ -1371,13 +1344,9 @@ body {
     max-width: 800px;
     font-size: 1.4rem;
   }
-  .right-btn {
-    right: -15px;
-    top: 50%;
-  }
-  .left-btn {
-    left: -15px;
-    top: 50%;
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block !important;
   }
   .person-img {
     display: block;
@@ -1415,6 +1384,20 @@ body {
   /* services */
   .level-item {
     font-size: 1.2rem;
+  }
+  .team-wrapper-mobile {
+    display: none;
+  }
+  .team-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* form */
+  .form-text {
+    font-size: 1.3rem;
   }
 }
 @media only screen and (min-width: 64em) {
@@ -1607,6 +1590,17 @@ body {
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     border-top-right-radius: 0px;
+  }
+  /*  */
+  .swiper-container {
+    width: 100%;
+    min-height: 300px;
+  }
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
   .level-content {
     flex-basis: 100%;

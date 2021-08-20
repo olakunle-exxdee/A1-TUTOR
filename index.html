@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>A1 Tutor</title>
   </head>
   <body>
@@ -397,7 +402,7 @@
               IJMB & JUPEB.
             </p>
 
-            <a href="#" class="btn download"
+            <a href="about.html" class="btn download"
               >About us
               <svg
                 width="24"
@@ -794,94 +799,217 @@
             What our <span class="blue">clients</span> say
           </h2>
         </div>
-        <div class="testimonial-wrapper">
-          <div class="person">
-            <div class="left-btn">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15 6L9 12L15 18"
-                  stroke="#0D1A26"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <div class="right-btn">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9 18L15 12L9 6"
-                  stroke="#0D1A26"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <div class="person-content">
-              <div class="person-svg">
-                <svg
-                  width="51"
-                  height="51"
-                  viewBox="0 0 51 51"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M43.1567 37.6295C47.1666 33.2775 46.7629 27.6887 46.7501 27.625V10.625C46.7501 10.0614 46.5262 9.52091 46.1277 9.1224C45.7292 8.72388 45.1887 8.5 44.6251 8.5H31.8751C29.5312 8.5 27.6251 10.4061 27.6251 12.75V27.625C27.6251 28.1886 27.849 28.7291 28.2475 29.1276C28.646 29.5261 29.1865 29.75 29.7501 29.75H36.2909C36.246 30.8006 35.9321 31.822 35.3792 32.7165C34.2997 34.4186 32.2661 35.581 29.3315 36.1675L27.6251 36.5075V42.5H29.7501C35.664 42.5 40.1754 40.8616 43.1567 37.6295ZM19.7669 37.6295C23.7789 33.2775 23.373 27.6887 23.3602 27.625V10.625C23.3602 10.0614 23.1363 9.52091 22.7378 9.1224C22.3393 8.72388 21.7988 8.5 21.2352 8.5H8.48523C6.14135 8.5 4.23523 10.4061 4.23523 12.75V27.625C4.23523 28.1886 4.45911 28.7291 4.85763 29.1276C5.25614 29.5261 5.79664 29.75 6.36023 29.75H12.901C12.8561 30.8006 12.5422 31.822 11.9894 32.7165C10.9099 34.4186 8.87623 35.581 5.9416 36.1675L4.23523 36.5075V42.5H6.36023C12.2741 42.5 16.7855 40.8616 19.7669 37.6295Z"
-                    fill="#FAD202"
-                  />
-                </svg>
-              </div>
-              <p class="testimonial-text">
-                I was having a hard time understanding Mathematics in school. No
-                matter how long my teacher tries to explain, I couldn’t get and
-                I became ashamed of speaking up in class when I don’t
-                understand. With A1tutor, I can learn on my own with simplified
-                notes for the complex equations and explanatory videos that made
-                mathematics fun. I made a B+ in my WAEC.
-              </p>
-              <div class="content-group">
-                <div class="person-img-mobile">
+
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="person">
+                <div class="person-content">
+                  <div class="person-svg">
+                    <svg
+                      width="51"
+                      height="51"
+                      viewBox="0 0 51 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M43.1567 37.6295C47.1666 33.2775 46.7629 27.6887 46.7501 27.625V10.625C46.7501 10.0614 46.5262 9.52091 46.1277 9.1224C45.7292 8.72388 45.1887 8.5 44.6251 8.5H31.8751C29.5312 8.5 27.6251 10.4061 27.6251 12.75V27.625C27.6251 28.1886 27.849 28.7291 28.2475 29.1276C28.646 29.5261 29.1865 29.75 29.7501 29.75H36.2909C36.246 30.8006 35.9321 31.822 35.3792 32.7165C34.2997 34.4186 32.2661 35.581 29.3315 36.1675L27.6251 36.5075V42.5H29.7501C35.664 42.5 40.1754 40.8616 43.1567 37.6295ZM19.7669 37.6295C23.7789 33.2775 23.373 27.6887 23.3602 27.625V10.625C23.3602 10.0614 23.1363 9.52091 22.7378 9.1224C22.3393 8.72388 21.7988 8.5 21.2352 8.5H8.48523C6.14135 8.5 4.23523 10.4061 4.23523 12.75V27.625C4.23523 28.1886 4.45911 28.7291 4.85763 29.1276C5.25614 29.5261 5.79664 29.75 6.36023 29.75H12.901C12.8561 30.8006 12.5422 31.822 11.9894 32.7165C10.9099 34.4186 8.87623 35.581 5.9416 36.1675L4.23523 36.5075V42.5H6.36023C12.2741 42.5 16.7855 40.8616 19.7669 37.6295Z"
+                        fill="#FAD202"
+                      />
+                    </svg>
+                  </div>
+                  <p class="testimonial-text">
+                    I was having a hard time understanding Mathematics in
+                    school. No matter how long my teacher tries to explain, I
+                    couldn’t get and I became ashamed of speaking up in class
+                    when I don’t understand. With A1tutor, I can learn on my own
+                    with simplified notes for the complex equations and
+                    explanatory videos that made mathematics fun. I made a B+ in
+                    my WAEC.
+                  </p>
+                  <div class="content-group">
+                    <div class="person-img-mobile">
+                      <img
+                        class="person-image"
+                        src="./images/person.png"
+                        alt="Micheal Achugo"
+                      />
+                    </div>
+                    <div class="test-context">
+                      <h3 class="person-name">Micheal Achugo</h3>
+                      <p class="person-level">100lvl, Statistics</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="person-img">
                   <img
                     class="person-image"
                     src="./images/person.png"
                     alt="Micheal Achugo"
                   />
                 </div>
-                <div class="test-context">
-                  <h3 class="person-name">Micheal Achugo</h3>
-                  <p class="person-level">100lvl, Statistics</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="person">
+                <div class="person-content">
+                  <div class="person-svg">
+                    <svg
+                      width="51"
+                      height="51"
+                      viewBox="0 0 51 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M43.1567 37.6295C47.1666 33.2775 46.7629 27.6887 46.7501 27.625V10.625C46.7501 10.0614 46.5262 9.52091 46.1277 9.1224C45.7292 8.72388 45.1887 8.5 44.6251 8.5H31.8751C29.5312 8.5 27.6251 10.4061 27.6251 12.75V27.625C27.6251 28.1886 27.849 28.7291 28.2475 29.1276C28.646 29.5261 29.1865 29.75 29.7501 29.75H36.2909C36.246 30.8006 35.9321 31.822 35.3792 32.7165C34.2997 34.4186 32.2661 35.581 29.3315 36.1675L27.6251 36.5075V42.5H29.7501C35.664 42.5 40.1754 40.8616 43.1567 37.6295ZM19.7669 37.6295C23.7789 33.2775 23.373 27.6887 23.3602 27.625V10.625C23.3602 10.0614 23.1363 9.52091 22.7378 9.1224C22.3393 8.72388 21.7988 8.5 21.2352 8.5H8.48523C6.14135 8.5 4.23523 10.4061 4.23523 12.75V27.625C4.23523 28.1886 4.45911 28.7291 4.85763 29.1276C5.25614 29.5261 5.79664 29.75 6.36023 29.75H12.901C12.8561 30.8006 12.5422 31.822 11.9894 32.7165C10.9099 34.4186 8.87623 35.581 5.9416 36.1675L4.23523 36.5075V42.5H6.36023C12.2741 42.5 16.7855 40.8616 19.7669 37.6295Z"
+                        fill="#FAD202"
+                      />
+                    </svg>
+                  </div>
+                  <p class="testimonial-text">
+                    I was having a hard time understanding Mathematics in
+                    school. No matter how long my teacher tries to explain, I
+                    couldn’t get and I became ashamed of speaking up in class
+                    when I don’t understand. With A1tutor, I can learn on my own
+                    with simplified notes for the complex equations and
+                    explanatory videos that made mathematics fun. I made a B+ in
+                    my WAEC.
+                  </p>
+                  <div class="content-group">
+                    <div class="person-img-mobile">
+                      <img
+                        class="person-image"
+                        src="./images/person.png"
+                        alt="Micheal Achugo"
+                      />
+                    </div>
+                    <div class="test-context">
+                      <h3 class="person-name">Micheal Achugo</h3>
+                      <p class="person-level">100lvl, Statistics</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="person-img">
+                  <img
+                    class="person-image"
+                    src="./images/person.png"
+                    alt="Micheal Achugo"
+                  />
                 </div>
               </div>
             </div>
-            <div class="person-img">
-              <img
-                class="person-image"
-                src="./images/person.png"
-                alt="Micheal Achugo"
-              />
+            <div class="swiper-slide">
+              <div class="person">
+                <div class="person-content">
+                  <div class="person-svg">
+                    <svg
+                      width="51"
+                      height="51"
+                      viewBox="0 0 51 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M43.1567 37.6295C47.1666 33.2775 46.7629 27.6887 46.7501 27.625V10.625C46.7501 10.0614 46.5262 9.52091 46.1277 9.1224C45.7292 8.72388 45.1887 8.5 44.6251 8.5H31.8751C29.5312 8.5 27.6251 10.4061 27.6251 12.75V27.625C27.6251 28.1886 27.849 28.7291 28.2475 29.1276C28.646 29.5261 29.1865 29.75 29.7501 29.75H36.2909C36.246 30.8006 35.9321 31.822 35.3792 32.7165C34.2997 34.4186 32.2661 35.581 29.3315 36.1675L27.6251 36.5075V42.5H29.7501C35.664 42.5 40.1754 40.8616 43.1567 37.6295ZM19.7669 37.6295C23.7789 33.2775 23.373 27.6887 23.3602 27.625V10.625C23.3602 10.0614 23.1363 9.52091 22.7378 9.1224C22.3393 8.72388 21.7988 8.5 21.2352 8.5H8.48523C6.14135 8.5 4.23523 10.4061 4.23523 12.75V27.625C4.23523 28.1886 4.45911 28.7291 4.85763 29.1276C5.25614 29.5261 5.79664 29.75 6.36023 29.75H12.901C12.8561 30.8006 12.5422 31.822 11.9894 32.7165C10.9099 34.4186 8.87623 35.581 5.9416 36.1675L4.23523 36.5075V42.5H6.36023C12.2741 42.5 16.7855 40.8616 19.7669 37.6295Z"
+                        fill="#FAD202"
+                      />
+                    </svg>
+                  </div>
+                  <p class="testimonial-text">
+                    I was having a hard time understanding Mathematics in
+                    school. No matter how long my teacher tries to explain, I
+                    couldn’t get and I became ashamed of speaking up in class
+                    when I don’t understand. With A1tutor, I can learn on my own
+                    with simplified notes for the complex equations and
+                    explanatory videos that made mathematics fun. I made a B+ in
+                    my WAEC.
+                  </p>
+                  <div class="content-group">
+                    <div class="person-img-mobile">
+                      <img
+                        class="person-image"
+                        src="./images/person.png"
+                        alt="Micheal Achugo"
+                      />
+                    </div>
+                    <div class="test-context">
+                      <h3 class="person-name">Micheal Achugo</h3>
+                      <p class="person-level">100lvl, Statistics</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="person-img">
+                  <img
+                    class="person-image"
+                    src="./images/person.png"
+                    alt="Micheal Achugo"
+                  />
+                </div>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="person">
+                <div class="person-content">
+                  <div class="person-svg">
+                    <svg
+                      width="51"
+                      height="51"
+                      viewBox="0 0 51 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M43.1567 37.6295C47.1666 33.2775 46.7629 27.6887 46.7501 27.625V10.625C46.7501 10.0614 46.5262 9.52091 46.1277 9.1224C45.7292 8.72388 45.1887 8.5 44.6251 8.5H31.8751C29.5312 8.5 27.6251 10.4061 27.6251 12.75V27.625C27.6251 28.1886 27.849 28.7291 28.2475 29.1276C28.646 29.5261 29.1865 29.75 29.7501 29.75H36.2909C36.246 30.8006 35.9321 31.822 35.3792 32.7165C34.2997 34.4186 32.2661 35.581 29.3315 36.1675L27.6251 36.5075V42.5H29.7501C35.664 42.5 40.1754 40.8616 43.1567 37.6295ZM19.7669 37.6295C23.7789 33.2775 23.373 27.6887 23.3602 27.625V10.625C23.3602 10.0614 23.1363 9.52091 22.7378 9.1224C22.3393 8.72388 21.7988 8.5 21.2352 8.5H8.48523C6.14135 8.5 4.23523 10.4061 4.23523 12.75V27.625C4.23523 28.1886 4.45911 28.7291 4.85763 29.1276C5.25614 29.5261 5.79664 29.75 6.36023 29.75H12.901C12.8561 30.8006 12.5422 31.822 11.9894 32.7165C10.9099 34.4186 8.87623 35.581 5.9416 36.1675L4.23523 36.5075V42.5H6.36023C12.2741 42.5 16.7855 40.8616 19.7669 37.6295Z"
+                        fill="#FAD202"
+                      />
+                    </svg>
+                  </div>
+                  <p class="testimonial-text">
+                    I was having a hard time understanding Mathematics in
+                    school. No matter how long my teacher tries to explain, I
+                    couldn’t get and I became ashamed of speaking up in class
+                    when I don’t understand. With A1tutor, I can learn on my own
+                    with simplified notes for the complex equations and
+                    explanatory videos that made mathematics fun. I made a B+ in
+                    my WAEC.
+                  </p>
+                  <div class="content-group">
+                    <div class="person-img-mobile">
+                      <img
+                        class="person-image"
+                        src="./images/person.png"
+                        alt="Micheal Achugo"
+                      />
+                    </div>
+                    <div class="test-context">
+                      <h3 class="person-name">Micheal Achugo</h3>
+                      <p class="person-level">100lvl, Statistics</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="person-img">
+                  <img
+                    class="person-image"
+                    src="./images/person.png"
+                    alt="Micheal Achugo"
+                  />
+                </div>
+              </div>
+            </div>
+            ...
           </div>
-          <div class="dot-group">
-            <div class="dot dot1"></div>
-            <div class="dot dot2"></div>
-            <div class="dot dot3"></div>
-            <div class="dot dot4"></div>
-          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
+        <div class="testimonial-wrapper"></div>
       </section>
       <footer class="footer">
         <div class="footer-wrapper">
@@ -958,6 +1086,8 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="app.js"></script>
   </body>

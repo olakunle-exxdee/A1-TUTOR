@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>A1 Tutor</title>
   </head>
   <body>
@@ -435,44 +440,10 @@
         </div>
       </footer>
     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      window.sr = ScrollReveal();
-      sr.reveal(".animate-left", {
-        origin: "left",
-        duration: 500,
-        distance: "10rem",
-        easing: "ease-in",
-        delay: 300,
-      });
-      sr.reveal(".animate-right", {
-        origin: "right",
-        duration: 500,
-        distance: "10rem",
-        easing: "ease-in",
-        delay: 300,
-      });
-
-      sr.reveal(".animate-top", {
-        origin: "top",
-        duration: 500,
-        distance: "10rem",
-        easing: "ease-in",
-        delay: 300,
-      });
-
-      sr.reveal(".animate-bottom", {
-        origin: "bottom",
-        duration: 500,
-        distance: "10rem",
-        easing: "ease-in",
-        delay: 300,
-      });
-      ScrollReveal().reveal(".sequenced", {
-        interval: 1000,
-      });
-    </script>
-
     <script src="app.js"></script>
   </body>
 </html>

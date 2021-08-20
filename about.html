@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>A1 Tutor</title>
   </head>
   <body>
@@ -192,7 +197,7 @@
           <div class="navbar-one">
             <div class="logo">
               <div class="logo-navbar">
-                <img src="./images/LOGO.svg" alt="A1tutor" />
+                <img src="/images/LOGO.svg" alt="A1tutor" />
               </div>
               <div class="menu">
                 <span></span>
@@ -340,7 +345,7 @@
         <div class="values-wrapper">
           <div class="values-box">
             <div class="value-img">
-              <img src="./images/person.svg" alt="person" />
+              <img src="/images/person.svg" alt="person" />
             </div>
             <p class="value-header">Student-centred approach</p>
             <p class="value-text">
@@ -356,7 +361,7 @@
           </div>
           <div class="values-box">
             <div class="value-img">
-              <img src="./images/tag.svg" alt="tag" />
+              <img src="/images/tag.svg" alt="tag" />
             </div>
             <p class="value-header">Comprehensive Curriculum</p>
             <p class="value-text">
@@ -371,7 +376,7 @@
           </div>
           <div class="values-box">
             <div class="value-img">
-              <img src="./images/community.svg" alt="community" />
+              <img src="/images/community.svg" alt="community" />
             </div>
             <p class="value-header">Community Learning</p>
             <p class="value-text">
@@ -384,7 +389,7 @@
           </div>
           <div class="values-box">
             <div class="value-img">
-              <img src="./images/message.svg" alt="message" />
+              <img src="/images/message.svg" alt="message" />
             </div>
             <p class="value-header">Proprietary Tutor Live Chat</p>
             <p class="value-text">
@@ -520,31 +525,70 @@
             Our <span class="blue">Team</span>
           </h2>
         </div>
-        <!-- <div class="team-wrapper-mobile">
-          <div class="team-member">
-            <div class="team-img">
-              <img
-                src="./images/team1.png"
-                alt="Moyin Olowu"
-                class="team-member-img"
-              />
+        <div class="team-wrapper-mobile">
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="team-member">
+                  <div class="team-img">
+                    <img src="/images/team1.png" alt="Moyin Olowu" />
+                  </div>
+                  <div class="team-content">
+                    <p class="team-member-name">Moyin Olowu</p>
+                    <p class="team-member-job">Lead Educational Consultant</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="team-member">
+                  <div class="team-img">
+                    <img src="/images/team2.png" alt="Bessie Cooper" />
+                  </div>
+                  <div class="team-content">
+                    <p class="team-member-name">Bessie Cooper</p>
+                    <p class="team-member-job">Lead Content Researcher</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="team-member">
+                  <div class="team-img">
+                    <img src="/images/team3.png" alt="Albert Flores" />
+                  </div>
+                  <div class="team-content">
+                    <p class="team-member-name">Albert Flores</p>
+                    <p class="team-member-job">Lead Content Researcher</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="team-member">
+                  <div class="team-img">
+                    <img src="/images/team4.png" alt="Darrell Steward" />
+                  </div>
+                  <div class="team-content">
+                    <p class="team-member-name">Darrell Steward</p>
+                    <p class="team-member-job">Lead Content Researcher</p>
+                  </div>
+                </div>
+              </div>
+              ...
             </div>
-            <div class="team-content">
-              <p class="team-member-name">Moyin Olowu</p>
-              <p class="team-member-job">Lead Educational Consultant</p>
-            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-          <div class="team-dot-group">
-            <div class="team-dot team-dot1"></div>
-            <div class="team-dot team-dot2"></div>
-            <div class="team-dot team-dot3"></div>
-            <div class="team-dot team-dot4"></div>
-          </div>
-        </div> -->
+        </div>
+
         <div class="team-wrapper">
           <div class="team-member">
             <div class="team-img">
-              <img src="./images/team1.png" alt="Moyin Olowu" />
+              <img src="/images/team1.png" alt="Moyin Olowu" />
             </div>
             <div class="team-content">
               <p class="team-member-name">Moyin Olowu</p>
@@ -553,7 +597,7 @@
           </div>
           <div class="team-member">
             <div class="team-img">
-              <img src="./images/team2.png" alt="Bessie Cooper" />
+              <img src="/images/team2.png" alt="Bessie Cooper" />
             </div>
             <div class="team-content">
               <p class="team-member-name">Bessie Cooper</p>
@@ -562,7 +606,7 @@
           </div>
           <div class="team-member">
             <div class="team-img">
-              <img src="./images/team3.png" alt="Albert Flores" />
+              <img src="/images/team3.png" alt="Albert Flores" />
             </div>
             <div class="team-content">
               <p class="team-member-name">Albert Flores</p>
@@ -571,7 +615,7 @@
           </div>
           <div class="team-member">
             <div class="team-img">
-              <img src="./images/team4.png" alt="Darrell Steward" />
+              <img src="/images/team4.png" alt="Darrell Steward" />
             </div>
             <div class="team-content">
               <p class="team-member-name">Darrell Steward</p>
@@ -581,6 +625,9 @@
         </div>
       </section>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="app.js"></script>
   </body>
 </html>
