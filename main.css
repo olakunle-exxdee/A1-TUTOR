@@ -104,6 +104,7 @@ body {
   max-width: 160em;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
 /************************* NAVBARs************************************ */
 .header {
@@ -309,6 +310,7 @@ body {
   max-width: var(--max-width-section);
   padding: 8em 2em;
   margin: 0 auto;
+  position: relative;
 }
 
 .hero_contents {
@@ -325,6 +327,7 @@ body {
   font-family: "CamptonBold", sans-serif;
   margin: 0.7rem 0 1.4rem 0;
 }
+
 .hero--sub-text {
   font-size: 1.4rem;
 }
@@ -1049,9 +1052,19 @@ body {
   background: var(--light-blue);
 }
 /* form */
-
 .form-section {
   text-align: center;
+  max-width: 500px;
+  margin: 0 2em 10rem 2em;
+  background: var(--white);
+  border-radius: 30px;
+}
+.form-header {
+  font-family: "CamptonBold", sans-serif;
+  font-size: 3.6rem;
+}
+.form-content:nth-child(1) {
+  margin-bottom: 2rem;
 }
 .form-img {
   max-width: 80px;
@@ -1059,7 +1072,95 @@ body {
 }
 .form-text {
   font-size: 1.1rem;
+  text-align: center;
 }
+.form {
+  padding: 3rem;
+  background: var(--white);
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control input {
+  border: 2px solid var(--white);
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  background: rgb(243, 243, 243);
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+.submit-form {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.submit {
+  background: var(--light-blue);
+  border: 2px solid #5ac8fa;
+  border-radius: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.submit svg {
+  margin-left: 2rem;
+}
+
 /* media queries  */
 @media only screen and (min-width: 40em) {
   .download + .web {

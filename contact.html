@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link
       rel="stylesheet"
@@ -247,58 +247,134 @@
             </div>
           </div>
         </nav>
-        <div class="form-img">
-          <img src="./images/LOGO.svg" alt="A1tutor" />
-        </div>
-        <div class="form-content">
-          <p class="form-text">
-            Welcome to A1tutor! <br />
-            Let’s help you get the highest grades in all your subjects and ace
-            your <br />
-            examinations
-          </p>
-        </div>
+        <section class="hero">
+          <div class="hero__wrapper animate-left">
+            <div class="hero_contents hero-service contact-header">
+              <p class="hero-text">NEED TO SPEAK TO US?</p>
+              <h1 class="hero-heading">
+                Get in
+                <span class="blue"> touch</span>
+              </h1>
+            </div>
+          </div>
+        </section>
       </header>
-      <section class="form-section">
-        <div class="form-content">
-          <p class="form-header">Login</p>
-          <p>Please put in your details below to log in to your profile</p>
+      <section class="contact-section">
+        <div class="contact-section-wrapper">
+          <!-- <form id="form" class="form">
+            <div class="form-control">
+              <label for="username">Username</label>
+              <input type="text" placeholder="florinpop17" id="username" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="username">Email</label>
+              <input type="email" placeholder="a@florin-pop.com" id="email" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="username">Password</label>
+              <input type="password" placeholder="Password" id="password" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="username">Password check</label>
+              <input
+                type="password"
+                placeholder="Password two"
+                id="password2"
+              />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <button>Submit</button>
+          </form> -->
         </div>
-        <form id="form" class="form">
-          <div class="form-control">
-            <input type="email" placeholder="Email" id="email" />
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <div class="logo-img">
+            <img class="logo-image" src="./images/LOGO.svg" alt="" />
           </div>
-          <div class="form-control">
-            <input type="password" placeholder="Password" id="password" />
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
-          </div>
-          <div class="submit-form">
-            <button class="submit">
-              Log in
+          <p class="footer-text">Your learning companion</p>
+
+          <ul class="lists">
+            <li class="items"><a href="index.html" class="links">Home</a></li>
+            <li class="items"><a href="about.html" class="links">About </a></li>
+            <li class="items">
+              <a href="services.html" class="links">Services</a>
+            </li>
+            <li class="items"><a href="#" class="links">Web platform</a></li>
+            <li class="items">
+              <a href="contact.html" class="links">Contacts</a>
+            </li>
+            <li class="items"><a href="#" class="links">FAQs</a></li>
+          </ul>
+          <div class="social">
+            <a href="#" class="social-media">
               <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
+                width="10"
+                height="20"
+                viewBox="0 0 10 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <circle opacity="0.1" cx="16" cy="16" r="16" fill="white" />
                 <path
-                  d="M20.6308 17.131C20.5743 17.189 20.3609 17.437 20.1622 17.641C18.9971 18.924 15.9576 21.024 14.3668 21.665C14.1252 21.768 13.5144 21.986 13.188 22C12.8753 22 12.5772 21.928 12.2927 21.782C11.9381 21.578 11.6537 21.257 11.4978 20.878C11.3975 20.615 11.2416 19.828 11.2416 19.814C11.0857 18.953 11 17.554 11 16.008C11 14.535 11.0857 13.193 11.2133 12.319C11.228 12.305 11.3838 11.327 11.5543 10.992C11.867 10.38 12.4778 10 13.1315 10H13.188C13.6137 10.015 14.509 10.395 14.509 10.409C16.0141 11.051 18.9834 13.048 20.1768 14.375C20.1768 14.375 20.5129 14.716 20.659 14.929C20.887 15.235 21 15.614 21 15.993C21 16.416 20.8724 16.81 20.6308 17.131Z"
-                  fill="#F4F7FB"
+                  d="M8.14996 3.29509H9.96164V0.139742C9.64908 0.0967442 8.57414 0 7.32226 0C4.71016 0 2.92081 1.643 2.92081 4.66274V7.44186H0.0383301V10.9693H2.92081V19.845H6.45487V10.9701H9.22076L9.65983 7.44269H6.45404V5.01251C6.45487 3.99297 6.72939 3.29509 8.14996 3.29509Z"
+                  fill="white"
                 />
               </svg>
-            </button>
-            <a href="#">Register now</a>
+            </a>
+            <a href="#" class="socila-media"
+              ><svg
+                width="22"
+                height="18"
+                viewBox="0 0 22 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 2.11613C21.1819 2.475 20.3101 2.71288 19.4013 2.82838C20.3363 2.27013 21.0499 1.39287 21.3854 0.3355C20.5136 0.85525 19.5511 1.22238 18.5254 1.42725C17.6976 0.545875 16.5179 0 15.2309 0C12.7339 0 10.7236 2.02675 10.7236 4.51137C10.7236 4.86888 10.7539 5.21263 10.8281 5.53988C7.0785 5.357 3.76062 3.55988 1.53175 0.82225C1.14262 1.49738 0.914375 2.27012 0.914375 3.102C0.914375 4.664 1.71875 6.04862 2.91775 6.85025C2.19312 6.8365 1.48225 6.62613 0.88 6.29475C0.88 6.3085 0.88 6.32638 0.88 6.34425C0.88 8.536 2.44338 10.3565 4.4935 10.7759C4.12638 10.8763 3.72625 10.9244 3.311 10.9244C3.02225 10.9244 2.73075 10.9079 2.45712 10.8474C3.0415 12.6335 4.69975 13.9466 6.6715 13.9893C5.137 15.1896 3.18863 15.9129 1.07938 15.9129C0.7095 15.9129 0.35475 15.8964 0 15.851C1.99787 17.1394 4.36563 17.875 6.919 17.875C15.2185 17.875 19.756 11 19.756 5.04075C19.756 4.84137 19.7491 4.64887 19.7395 4.45775C20.6346 3.8225 21.3867 3.02913 22 2.11613Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="#" class="socila-media">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.875 0H15.125C18.9214 0 22 3.07862 22 6.875V15.125C22 18.9214 18.9214 22 15.125 22H6.875C3.07862 22 0 18.9214 0 15.125V6.875C0 3.07862 3.07862 0 6.875 0ZM15.125 19.9375C17.7787 19.9375 19.9375 17.7787 19.9375 15.125V6.875C19.9375 4.22125 17.7787 2.0625 15.125 2.0625H6.875C4.22125 2.0625 2.0625 4.22125 2.0625 6.875V15.125C2.0625 17.7787 4.22125 19.9375 6.875 19.9375H15.125Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.5 11C5.5 7.96263 7.96263 5.5 11 5.5C14.0374 5.5 16.5 7.96263 16.5 11C16.5 14.0374 14.0374 16.5 11 16.5C7.96263 16.5 5.5 14.0374 5.5 11ZM7.5625 11C7.5625 12.8948 9.10525 14.4375 11 14.4375C12.8948 14.4375 14.4375 12.8948 14.4375 11C14.4375 9.10388 12.8948 7.5625 11 7.5625C9.10525 7.5625 7.5625 9.10388 7.5625 11Z"
+                  fill="white"
+                />
+                <circle cx="16.9124" cy="5.08737" r="0.732875" fill="white" />
+              </svg>
+            </a>
           </div>
-        </form>
-      </section>
+        </div>
+      </footer>
     </div>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
