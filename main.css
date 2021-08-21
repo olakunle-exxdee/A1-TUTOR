@@ -317,7 +317,7 @@ body {
   margin-bottom: 6rem;
 }
 .hero-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--yellow);
   letter-spacing: 0.75rem;
   text-transform: uppercase;
