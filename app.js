@@ -37,6 +37,19 @@ hamburgerMenu.addEventListener("click", () => {
   }
 });
 
+let questions = document.getElementsByClassName("question");
+for (let i = 0; i < questions.length; i++) {
+  questions[i].addEventListener("click", () => {
+    questions[i].classList.toggle("active");
+    let answer = questions[i].nextElementSibling;
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  });
+}
+
 const objOptions = {
   root: null,
   threshold: 0.3,
