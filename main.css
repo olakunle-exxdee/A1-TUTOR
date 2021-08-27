@@ -109,7 +109,6 @@ body {
 .header {
   z-index: 10;
   min-height: 70vh;
-  position: relative;
   background: linear-gradient(to right, #011d29, #023045, #011d29, #011d29);
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
   color: var(--light-white);
@@ -1082,7 +1081,7 @@ body {
 
 .form-header {
   font-family: "CamptonSemiBold", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -1092,12 +1091,17 @@ body {
 
 .contact-form {
   margin: 0 1rem 8rem 1rem;
+  position: absolute;
+  top: 60%;
+  left: 10%;
 }
 
 .contact-form-box {
   max-width: 400px;
   margin: 0 auto;
   background: var(--white);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .contact-form-blue {
   background-color: var(--light-blue);
@@ -1222,7 +1226,7 @@ body {
   max-width: var(--max-width-section);
   text-align: center;
   padding: 0 2rem;
-  margin: 6rem auto;
+  margin: 90rem auto 6rem auto;
 }
 .faq-wrapper {
   margin: 4rem auto;
@@ -1619,6 +1623,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .form-header {
+    font-family: "CamptonSemiBold", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 64em) {
