@@ -99,6 +99,7 @@ body {
   line-height: 1.5;
   font-family: "CamptonBook", sans-serif;
   background-color: #f4f7fb;
+  overflow: hidden;
 }
 .container {
   max-width: 160em;
@@ -1226,7 +1227,7 @@ body {
   max-width: var(--max-width-section);
   text-align: center;
   padding: 0 2rem;
-  margin: 90rem auto 6rem auto;
+  margin: 85rem auto 6rem auto;
 }
 .faq-wrapper {
   margin: 4rem auto;
