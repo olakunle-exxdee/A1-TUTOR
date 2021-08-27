@@ -99,12 +99,10 @@ body {
   line-height: 1.5;
   font-family: "CamptonBook", sans-serif;
   background-color: #f4f7fb;
-  overflow: hidden;
 }
 .container {
   max-width: 160em;
   margin: 0 auto;
-  overflow: hidden;
 }
 /************************* NAVBARs************************************ */
 .header {
