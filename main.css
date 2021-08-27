@@ -1811,7 +1811,7 @@ body {
     border-top-right-radius: 0px;
   }
   /*  */
-  .swiper-container {
+  .swiper {
     width: 100%;
     min-height: 300px;
   }

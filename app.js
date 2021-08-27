@@ -6,13 +6,13 @@ const list = document.querySelector(".list");
 
 let showMenu = false;
 
-const swiper = new Swiper(".swiper-container", {
+const swiper = new Swiper(".swiper", {
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
-    loop: true,
     clickable: true,
+    loop: true,
   },
   // Navigation arrows
   navigation: {
