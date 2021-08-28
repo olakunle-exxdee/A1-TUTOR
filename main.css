@@ -512,6 +512,9 @@ body {
 .success {
   margin: 2rem 0;
 }
+.counter {
+  display: inline-block;
+}
 .success .why-header {
   display: none;
 }
