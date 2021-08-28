@@ -100,11 +100,11 @@ body {
   font-family: "CamptonBook", sans-serif;
   background-color: #f4f7fb;
 }
-.container {
+/* .container {
   max-width: 160em;
   margin: 0 auto;
   overflow: hidden;
-}
+} */
 /************************* NAVBARs************************************ */
 .header {
   z-index: 10;
@@ -1038,6 +1038,10 @@ body {
   max-width: 277px;
   text-align: center;
 }
+.team-img img {
+  width: 277px;
+  margin: 0 auto;
+}
 .team-member {
   margin-bottom: 4rem;
 }
@@ -1920,5 +1924,16 @@ body {
   .faq-header {
     text-align: center;
     max-width: 1400px !important;
+  }
+}
+
+@media only screen and (min-width: 120em) {
+  .header {
+    min-height: 30vh;
+    /* clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%); */
+  }
+  .signin {
+    clip-path: ellipse(81% 68% at 50% 32%);
+    min-height: 30vh;
   }
 }
