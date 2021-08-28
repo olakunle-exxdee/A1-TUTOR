@@ -3,6 +3,7 @@ const header = document.querySelector(".header");
 const navbar = document.querySelector(".navbar");
 const navbar2 = document.querySelector(".navbar-two");
 const list = document.querySelector(".list");
+const signin = document.querySelector(".signin");
 
 let showMenu = false;
 
@@ -28,7 +29,7 @@ for (let n of counters) {
   const updateCount = () => {
     const target = +n.getAttribute("data-target");
     const count = +n.innerText;
-    const speed = 50000; // change animation speed here
+    const speed = 500; // change animation speed here
     const inc = target / speed;
     if (count < target) {
       n.innerText = Math.ceil(count + inc);
@@ -43,12 +44,14 @@ for (let n of counters) {
 hamburgerMenu.addEventListener("click", () => {
   if (!showMenu) {
     header.classList.add("open-header");
+
     navbar.classList.add("open-color");
     list.classList.add("open");
     navbar2.classList.add("open");
     showMenu = true;
   } else {
     header.classList.remove("open-header");
+
     navbar.classList.remove("open-color");
     list.classList.remove("open");
     navbar2.classList.remove("open");

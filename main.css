@@ -947,8 +947,11 @@ body {
 /* level */
 .level {
   max-width: var(--max-width-section);
-  padding: 8em 2em;
+  padding: 0 2em;
   margin: 0 auto;
+}
+.level-wrapper {
+  display: none;
 }
 .level-box {
   max-width: 500px;
@@ -1020,6 +1023,10 @@ body {
 }
 .team-wrapper-mobile {
   max-width: 300px;
+  margin: 0 auto;
+}
+.level-wrapper-mobile {
+  max-width: 400px;
   margin: 0 auto;
 }
 .team-content {
@@ -1607,11 +1614,17 @@ body {
   .team-wrapper-mobile {
     display: none;
   }
+  .level-wrapper-mobile {
+    display: none;
+  }
   .team-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+  }
+  .level-wrapper {
+    display: block;
   }
 
   /* form */
@@ -1793,6 +1806,7 @@ body {
     padding: 8em 0;
     margin: 4rem auto;
   }
+
   .level-box {
     position: relative;
     max-width: 100%;
