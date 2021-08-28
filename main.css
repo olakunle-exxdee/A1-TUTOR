@@ -1029,6 +1029,9 @@ body {
   max-width: 400px;
   margin: 0 auto;
 }
+.level-wrapper-mobile .swiper-wrapper {
+  margin-bottom: 2rem !important;
+}
 .team-content {
   padding: 1rem;
   background: var(--white);
