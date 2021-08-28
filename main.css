@@ -100,11 +100,11 @@ body {
   font-family: "CamptonBook", sans-serif;
   background-color: #f4f7fb;
 }
-/* .container {
-  max-width: 160em;
+.container {
+  max-width: 190em;
   margin: 0 auto;
   overflow: hidden;
-} */
+}
 /************************* NAVBARs************************************ */
 .header {
   z-index: 10;
