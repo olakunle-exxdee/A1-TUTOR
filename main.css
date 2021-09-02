@@ -1040,9 +1040,12 @@ body {
 }
 .team-img img {
   width: 277px;
+  height: 250px;
   margin: 0 auto;
 }
 .team-member {
+  width: 277px;
+  margin: 0 auto;
   margin-bottom: 4rem;
 }
 .team-member-name {
@@ -1929,11 +1932,11 @@ body {
 
 @media only screen and (min-width: 120em) {
   .header {
-    min-height: 30vh;
-    /* clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%); */
+    min-height: 35vh;
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
   }
   .signin {
-    clip-path: ellipse(81% 68% at 50% 32%);
-    min-height: 30vh;
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+    min-height: 35vh;
   }
 }
