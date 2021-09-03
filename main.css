@@ -640,7 +640,7 @@ body {
   padding: 4rem 0;
   color: var(--white);
   background-image: linear-gradient(to bottom, #5ac8fa, 89%, #4081bf);
-
+  /* clip-path: ellipse(90% 51% at 51% 50%); */
   text-align: center;
 }
 .started img {
@@ -934,6 +934,11 @@ body {
   max-width: 350px;
   margin: 1em auto 4em auto;
   border-top: 5px solid var(--light-blue);
+  transition: transfrom 300ms ease-in-out;
+}
+.values-box:hover {
+  box-shadow: -10px 10px 10px 10px rgba(162, 162, 162, 0.1);
+  cursor: pointer;
 }
 .value-header {
   font-family: "CamptonSemiBold";
@@ -1035,16 +1040,19 @@ body {
 .team-content {
   padding: 1rem;
   background: var(--white);
-  max-width: 277px;
+  max-width: 300px;
   text-align: center;
 }
+.team-img {
+  border-radius: 30px;
+}
 .team-img img {
-  width: 277px;
+  width: 300px;
   height: 250px;
   margin: 0 auto;
 }
 .team-member {
-  width: 277px;
+  max-width: 300px;
   margin: 0 auto;
   margin-bottom: 4rem;
 }
@@ -1102,22 +1110,35 @@ body {
 
 .form-header {
   font-family: "CamptonSemiBold", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
+  padding: 2rem 0;
 }
 
 .form-content:nth-child(1) {
   margin-bottom: 2rem;
 }
-
+.concon {
+  position: relative;
+  margin-bottom: 60rem;
+}
 .contact-form {
-  margin: 0 1rem 8rem 1rem;
+  margin: 0rem 1rem 8rem 1rem;
+  position: absolute;
+  left: 3rem;
+  top: 80%;
+  z-index: 10;
+}
+.contact-form-wrapper {
 }
 
 .contact-form-box {
+  padding: 0 2rem;
   max-width: 400px;
   margin: 0 auto;
   background: var(--white);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .contact-form-blue {
   background-color: var(--light-blue);
@@ -1241,7 +1262,7 @@ body {
 .faq {
   max-width: var(--max-width-section);
   text-align: center;
-  padding: 0 2rem;
+  padding: 30rem 2rem;
   margin: 6rem auto;
 }
 .faq-wrapper {
@@ -1633,6 +1654,9 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+  .team-member {
+    max-width: 277px;
+  }
   .level-wrapper {
     display: block;
   }
@@ -1814,7 +1838,7 @@ body {
   .level {
     max-width: var(--max-width-section);
     padding: 8em 0;
-    margin: 4rem auto;
+    margin: 4rem 0 4rem auto;
   }
 
   .level-box {
@@ -1859,8 +1883,12 @@ body {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.4);
     padding: 2rem;
-
     filter: drop-shadow(0px 3px 3px rgba(42, 88, 116, 0.15));
+    box-shadow: 0 1.6px 3.6px -11px rgba(42, 88, 116, 0.049),
+      0 3.9px 10.5px -11px rgba(42, 88, 116, 0),
+      0 7.3px 21.8px -11px rgba(42, 88, 116, 0.058),
+      0 13px 38.6px -11px rgba(42, 88, 116, 0.058),
+      0 24.2px 62.5px -11px rgba(42, 88, 116, 0.058);
   }
   .level-list {
     display: flex;
