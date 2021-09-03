@@ -107,7 +107,7 @@ body {
 }
 /************************* NAVBARs************************************ */
 .header {
-  z-index: 10;
+  /* z-index: 10; */
   min-height: 70vh;
   position: relative;
   background: linear-gradient(to right, #011d29, #023045, #011d29, #011d29);
@@ -304,7 +304,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 9;
+  z-index: 11;
 }
 /************************* NAVBARs************************************ */
 
@@ -1260,8 +1260,8 @@ body {
 .faq {
   max-width: var(--max-width-section);
   text-align: center;
-  padding: 30rem 2rem;
-  margin: 6rem auto;
+  padding: 30rem 2rem 10rem 2rem;
+  margin: 0 auto;
 }
 .faq-wrapper {
   margin: 4rem auto;
@@ -1504,6 +1504,12 @@ body {
   }
   .level-item {
     font-size: 1.2rem;
+  }
+  .contact-form {
+    margin: 0rem 1rem 8rem 1rem;
+    position: absolute;
+    left: 20%;
+    top: 70%;
   }
 }
 
@@ -1933,9 +1939,14 @@ body {
     width: 32px;
     margin-right: 4rem;
   }
+  .concon {
+    position: relative;
+    margin-bottom: 40rem;
+  }
   .faq {
     text-align: left;
-    margin: 8rem auto;
+    margin: 0rem auto;
+    padding: 8rem 2rem;
   }
 
   .faq-wrapper {
