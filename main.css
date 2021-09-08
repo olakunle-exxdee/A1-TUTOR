@@ -116,7 +116,7 @@ body {
 }
 .signin {
   clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
-  background: linear-gradient(to right, #011d29, #023045, #011d29, #011d29);
+  background-color: #171826;
   min-height: 70vh;
 }
 .subheader {
@@ -543,13 +543,14 @@ body {
 }
 
 .success-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 1rem;
-  margin: 3rem 0;
+  display: none;
+}
+.success-wrapper-mobile {
+  margin: 5rem auto 0 auto;
+  max-width: 300px;
+}
+.success-pagination {
+  margin-bottom: 3rem;
 }
 .box {
   flex-basis: 100%;
@@ -746,7 +747,8 @@ body {
   padding: 4rem 0;
   color: var(--white);
   background-image: linear-gradient(to bottom, #5ac8fa, 89%, #4081bf);
-  /* clip-path: ellipse(90% 51% at 51% 50%); */
+  clip-path: ellipse(90% 50% at 50% 50%);
+
   text-align: center;
 }
 .started img {
@@ -872,10 +874,7 @@ body {
 /*******************************TESTIMONIALS************************************ */
 /*******************************FOOTER************************************ */
 .footer {
-  background: linear-gradient(to bottom, #011d29, #023045, #023045, #023045);
-  background: linear-gradient(to right, #4081bf, #023045, #011d29, #011d29);
-  background: linear-gradient(to right, #011d29, #023045, #011d29, #4081bf);
-  background: linear-gradient(to right, #171826, #023045, #011d29, #011d29);
+  background-color: #171826;
   padding: 8em 2em 4em 2em;
   color: var(--light-white);
   clip-path: polygon(64% 5%, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 14%);
@@ -1199,6 +1198,28 @@ body {
   left: 0;
   top: 50%;
 }
+.form-pos p {
+  color: var(--white);
+  text-align: center;
+  max-width: 370px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+.form-pos img {
+  max-width: 90px;
+  margin: 0 auto;
+}
+.form-login-header {
+  font-family: "CamptonSemiBold", sans-serif;
+  font-size: 2.6rem !important;
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--dark-blue) !important;
+}
+.form-login-text {
+  color: var(--dark-blue) !important;
+  font-size: 1.3rem;
+}
 .form-section {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -1281,6 +1302,18 @@ body {
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
+}
+.form-control select {
+  border: 2px solid var(--white);
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 1.4rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 20px;
+  background: rgba(59, 93, 125, 0.1);
+  outline: none;
 }
 
 .form-control input {
@@ -1622,6 +1655,18 @@ body {
     left: 20%;
     top: 70%;
   }
+  .success-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    margin: 3rem 0;
+  }
+  .success-wrapper-mobile {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 48em) {
@@ -1788,6 +1833,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .form-pos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 35%;
+  }
+  .form-pos p {
+    color: var(--white);
+    text-align: center;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    font-size: 1.3rem;
   }
 }
 @media only screen and (min-width: 64em) {
