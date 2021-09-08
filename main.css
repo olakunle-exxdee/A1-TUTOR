@@ -109,9 +109,8 @@ body {
 .header {
   min-height: 70vh;
   position: relative;
-  background: linear-gradient(to right, #4081bf, #023045, #011d29, #011d29);
-  background: linear-gradient(to left, #011d29, #023045, #011d29, #4081bf);
-  background: linear-gradient(to right, #171826, #023045, #011d29, #011d29);
+
+  background: #171826;
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
   color: var(--light-white);
 }
@@ -292,6 +291,14 @@ body {
 .btn:hover,
 .btn:focus {
   opacity: 0.7;
+}
+.sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-in + .sign-in {
+  margin-left: 1rem;
 }
 .sign-in {
   margin: 3rem auto;
@@ -520,8 +527,9 @@ body {
   margin: 0 auto;
   margin-top: 6rem;
 }
-.why-img-1 {
-  display: none;
+.why-img-2 {
+  max-width: 270px;
+  margin: 0 auto;
 }
 
 .success {
@@ -1034,11 +1042,11 @@ body {
   border-radius: 5px;
   max-width: 350px;
   margin: 1em auto 4em auto;
-  border-top: 5px solid var(--light-blue);
   transition: transfrom 300ms ease-in-out;
 }
 .values-box:hover {
   box-shadow: -10px 10px 10px 10px rgba(162, 162, 162, 0.1);
+  border-top: 5px solid var(--light-blue);
   cursor: pointer;
 }
 .value-header {
@@ -1595,7 +1603,6 @@ body {
     border-radius: 5px;
     max-width: 275px;
     margin: 1em auto 4em auto;
-    border-top: 5px solid var(--light-blue);
   }
   .value-header {
     font-family: "CamptonSemiBold";
@@ -1843,13 +1850,10 @@ body {
   }
   .why-image-content {
     flex-basis: 100%;
-    max-width: 900px;
-  }
-  .why-img-1 {
-    display: block;
+    max-width: 1000px;
   }
   .why-img-2 {
-    display: none;
+    max-width: 500px;
   }
 
   .why-header {
