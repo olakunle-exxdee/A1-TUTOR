@@ -297,8 +297,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-.sign-in + .sign-in {
-  margin-left: 1rem;
+.subject + .sign-in {
+  margin-left: 4rem !important;
 }
 .sign-in {
   margin: 3rem auto;
@@ -311,6 +311,50 @@ body {
     #4492cf,
     #4081bf
   );
+}
+.subject {
+  background-color: var(--light-white);
+  color: var(--light-blue);
+  margin: 3rem 2rem 3rem auto;
+  font-size: 1.2em;
+}
+.dropdown-list {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--light-white);
+  color: var(--dark-blue);
+  top: 80%;
+  z-index: 10;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1em 0 4em 0;
+}
+.dropdown-parent-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown-parent-text:hover {
+  background-color: rgba(90, 200, 250, 0.14);
+  color: var(--light-blue);
+}
+.dropdown-parent-text:hover .svgdrop {
+  stroke: var(--light-blue);
+}
+
+.dropdown-parent-text p {
+  font-size: 1.2rem;
+  text-align: left;
+  flex-basis: 100%;
+}
+.dropdown-list:hover .dropdown-content {
+  display: block;
 }
 
 .open {
@@ -1708,7 +1752,8 @@ body {
   .link {
     font-size: 1.6em;
   }
-  .sign-in {
+  .sign-in,
+  .subject {
     font-size: 1.4em;
   }
   /************************* NAVBARs************************************ */
