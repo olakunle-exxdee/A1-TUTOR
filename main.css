@@ -1327,7 +1327,7 @@ body {
 .contact-form {
   margin: 0rem 1rem 8rem 1rem;
   position: absolute;
-  left: 3rem;
+  left: 5%;
   top: 80%;
   z-index: 10;
 }
