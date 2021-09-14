@@ -47,6 +47,7 @@ hamburgerMenu.addEventListener("click", () => {
     header.classList.add("open-header");
     logo.classList.add("open-logo");
     navbar.classList.add("open-color");
+
     list.classList.add("open");
     navbar2.classList.add("open");
     showMenu = true;
@@ -54,6 +55,7 @@ hamburgerMenu.addEventListener("click", () => {
     header.classList.remove("open-header");
     logo.classList.remove("open-logo");
     navbar.classList.remove("open-color");
+
     list.classList.remove("open");
     navbar2.classList.remove("open");
     showMenu = false;
