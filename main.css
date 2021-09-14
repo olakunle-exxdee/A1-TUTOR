@@ -295,7 +295,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 .subject + .sign-in {
   margin-left: 4rem !important;
@@ -320,24 +319,10 @@ body {
 }
 .dropdown-list {
   position: relative;
-}
-.dropdown-content {
-  position: relative;
-}
-.dropdown-bold {
-  display: none;
-}
-.dropdown-box {
   display: none;
 }
 
-.dropdown-list:hover .dropdown-bold:nth-child(1) {
-  display: block;
-}
-.dropdown-content:nth-child(1):hover .dropdown-box {
-  display: block;
-}
-/* .dropdown-content-wrapper {
+.dropdown-content-wrapper {
   display: none;
   position: absolute;
   background-color: var(--light-white);
@@ -396,7 +381,7 @@ body {
 
 .dropdown-link {
   color: var(--dark-blue);
-} */
+}
 
 .open {
   display: block;
