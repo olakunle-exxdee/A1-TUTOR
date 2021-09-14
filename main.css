@@ -327,6 +327,7 @@ body {
 .dropdown-bold {
   font-size: 1.3rem;
   font-weight: bolder;
+  cursor: pointer;
 }
 .dropdown-link {
   color: var(--light-blue);
@@ -334,8 +335,9 @@ body {
 .dropdown-box {
   padding: 1rem;
   display: none;
-  opacity: 0.9;
+  opacity: 0.5;
 }
+
 .dropdown-list:hover .dropdown-content-wrapper {
   display: block;
 }
