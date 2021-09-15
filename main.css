@@ -328,14 +328,14 @@ body {
   font-size: 1.3rem;
   font-weight: bolder;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 .dropdown-link {
   color: var(--light-blue);
 }
 .dropdown-box {
-  padding: 1rem;
   display: none;
-  opacity: 0.5;
+  padding-bottom: 2rem;
 }
 
 .dropdown-list:hover .dropdown-content-wrapper {
