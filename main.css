@@ -1309,7 +1309,7 @@ body {
 .contact-form {
   margin: 0rem 1rem 8rem 1rem;
   position: absolute;
-  left: 5%;
+  left: 12%;
   top: 80%;
   z-index: 10;
 }
@@ -2280,12 +2280,7 @@ body {
   .level-item {
     font-size: 1.4rem;
   }
-  .contact-form {
-    margin: 0rem 1rem 8rem 1rem;
-    position: absolute;
-    left: 35%;
-    top: 70%;
-  }
+
   .contact-form-wrapper {
     display: flex;
     max-width: 800px;
@@ -2344,6 +2339,12 @@ body {
 }
 
 @media only screen and (min-width: 120em) {
+  .contact-form {
+    margin: 0rem 1rem 8rem 1rem;
+    position: absolute;
+    left: 35%;
+    top: 70%;
+  }
   .header {
     min-height: 35vh;
     clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
